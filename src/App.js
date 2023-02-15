@@ -1,11 +1,14 @@
 import './App.css';
+import './components/Header/header.css';
 import QuizLogic from './components/Question/quizLogic.js';
+import HeaderPart from './components/Header/header.js';
+
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>FAB 4</h1>
+        <HeaderPart />
         <QuizLogic />
       </header>
     </div>
