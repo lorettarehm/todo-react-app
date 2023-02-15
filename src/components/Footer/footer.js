@@ -4,8 +4,10 @@ import "./style.css";
 
 function Footer() {
   return (
-    <div className="footer">
-      <p>Footer</p>
+    <div className="footer border border-danger">
+      <h2 className="text-danger">
+        This is Footer with netlify form activated
+      </h2>
       {/* subscribe to newsletter form using netlify form handling */}
       <form
         name="contact"
