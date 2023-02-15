@@ -1,13 +1,12 @@
-// import logo from './logo.svg';
 import './App.css';
-import Quiz from './components/Quiz';
+import QuizLogic from './components/Question/quizLogic.js';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <h1>FAB 4</h1>
-        <Quiz />
+        <QuizLogic />
       </header>
     </div>
   );
