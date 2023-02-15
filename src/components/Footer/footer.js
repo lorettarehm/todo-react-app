@@ -6,7 +6,7 @@ function Footer() {
   return (
     <div className="footer">
       <p>Footer</p>
-      // subscribe to newsletter form using netlify form handling
+      {/* subscribe to newsletter form using netlify form handling */}
       <form
         name="contact"
         method="POST"
@@ -30,7 +30,7 @@ function Footer() {
           </label>
         </p>
         <p>
-          <button type="submit">Send</button>
+          <button type="submit">Subscribe</button>
         </p>
       </form>
     </div>
