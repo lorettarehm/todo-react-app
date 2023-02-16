@@ -23,7 +23,7 @@ function HeaderPart() {
 </ul>
 </nav>
 
-<section className="jumbotron">
+
 <div className="jumbotron">
   <h1 className="display-4">The Geo Quiz</h1>
   <p className="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention.</p>
@@ -31,7 +31,7 @@ function HeaderPart() {
     <span className="far fa-play-circle fa-2xl" aria-hidden="true"></span>
     </button>
 </div>
-</section>
+
 
 <section className="explore">
 <h2>Explore the quizes</h2>

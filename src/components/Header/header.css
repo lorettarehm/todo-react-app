@@ -18,8 +18,7 @@ html body {
 }
 
 /* JUMBOTRON */
-
-.jumbotron {
+.App-header {
     background: url("images/mountains-1.jpg");
     height: 900px;
     background-position: center;
@@ -27,6 +26,10 @@ html body {
     background-size: cover;
     background-color: aqua;
     text-align: center;
+}
+
+.jumbotron {
+    background-color: transparent !;
 }
 
 .jumbotron p {
