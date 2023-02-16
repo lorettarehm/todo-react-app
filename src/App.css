@@ -39,3 +39,17 @@
     transform: rotate(360deg);
   }
 }
+
+/* Material UI style overrides */
+.MuiButton-root {
+  background: linear-gradient(to bottom, #3a261f, #545d64)!important;
+  color: #fff !important;
+  border-style:none !important;
+  margin: 1vh !important;
+}
+
+.MuiCard-root {
+  background-color: #545d64 !important;
+  background-blend-mode:soft-light;
+  color: #fff !important;
+}
