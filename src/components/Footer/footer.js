@@ -5,16 +5,19 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 
 function Footer() {
   return (
-    <div className="footer border border-warning text-light mt-1">
-      <h2 className="text-danger">
-        / This is Footer with netlify form activated /
-      </h2>
+    <div className="footer border border-warning text-light font-weight-light mt-1">
+      <h4 className="text-light">/ FOOTER WITH NETLIFY FORM ACTIVATED/</h4>
       {/* subscribe to newsletter form using netlify form handling */}
       <div className="container">
         <div className="row">
           <div className="aboutus col-md-4">
             <h5>About Us</h5>
-            <p>Short description about the project</p>
+            <p className="text-left">
+              The Fab 4 Coder is a team of junior developers who provide
+              engaging geography quizzes. We aim to make learning accessible and
+              enjoyable for all, inspiring a love for geography. Join us to
+              explore and learn about the world.
+            </p>
           </div>
           <div className="followus col-md-4">
             <h5>Follow Us</h5>
@@ -37,7 +40,7 @@ function Footer() {
             </ul>
           </div>
           <div className="subform col-md-4">
-            <h5>Subscribe to our newsletter</h5>
+            <h5>Subscribe to our Newsletter:</h5>
             <form
               name="contact"
               method="POST"
@@ -48,7 +51,7 @@ function Footer() {
               <div className="form-group">
                 <input
                   type="text"
-                  className="form-control"
+                  className="form-control form-control-sm"
                   id="InputName"
                   placeholder="Name"
                 />
@@ -56,12 +59,15 @@ function Footer() {
               <div className="form-group">
                 <input
                   type="email"
-                  className="form-control"
+                  className="form-control form-control-sm"
                   id="InputEmail"
                   placeholder="Email"
                 />
               </div>
-              <button type="submit" className="btn btn-primary btn-block">
+              <button
+                type="submit"
+                className="btn btn-primary btn-block btn-sm"
+              >
                 Subscribe
               </button>
             </form>
