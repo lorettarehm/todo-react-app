@@ -5,23 +5,19 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 
 function Footer() {
   return (
-    <div className="footer border border-danger text-light">
+    <div className="footer border border-warning text-light mt-1">
       <h2 className="text-danger">
-        This is Footer with netlify form activated
+        / This is Footer with netlify form activated /
       </h2>
       {/* subscribe to newsletter form using netlify form handling */}
       <div className="container">
         <div className="row">
-          <div className="col-md-3">
-            <img src="https://via.placeholder.com/50" alt="Fab4Coder Logo" />
-            <p>&copy; The Fab 4 Coder 2023</p>
-          </div>
-          <div className="col-md-3">
-            <h4>About Us</h4>
+          <div className="aboutus col-md-4">
+            <h5>About Us</h5>
             <p>Short description about the project</p>
           </div>
-          <div className="col-md-3">
-            <h4>Follow Us</h4>
+          <div className="followus col-md-4">
+            <h5>Follow Us</h5>
             <ul className="list-unstyled d-flex justify-content-around ">
               <li>
                 <a href="https://twitter.com/your-twitter-account">
@@ -40,8 +36,8 @@ function Footer() {
               </li>
             </ul>
           </div>
-          <div className="col-md-3">
-            <h4>Subscribe</h4>
+          <div className="subform col-md-4">
+            <h5>Subscribe to our newsletter</h5>
             <form
               name="contact"
               method="POST"
@@ -50,28 +46,30 @@ function Footer() {
             >
               <input type="hidden" name="form-name" value="contact" />
               <div className="form-group">
-                <label for="InputName">Name</label>
                 <input
                   type="text"
-                  class="form-control"
+                  className="form-control"
                   id="InputName"
-                  placeholder="Your Name"
+                  placeholder="Name"
                 />
               </div>
               <div className="form-group">
-                <label for="exampleInputEmail1">Email address</label>
                 <input
                   type="email"
-                  class="form-control"
-                  id="exampleInputEmail1"
-                  placeholder="Your email"
+                  className="form-control"
+                  id="InputEmail"
+                  placeholder="Email"
                 />
               </div>
-              <button type="submit" class="btn btn-primary">
-                Submit
+              <button type="submit" className="btn btn-primary btn-block">
+                Subscribe
               </button>
             </form>
           </div>
+        </div>
+        <div className="copyright mt-3 d-flex justify-content-center border ">
+          {/* <img src="https://via.placeholder.com/20" alt="Fab4Coder Logo" /> */}
+          <p>&copy; 2023 The Fab 4 Coder. All Rights Reserved </p>
         </div>
       </div>
     </div>
