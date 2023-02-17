@@ -8,7 +8,7 @@ const TeamCard = () => {
       <h2 className="text-danger"> This is TEAM CARD </h2>
       <div className="container">
         <div className="row">
-          <div className="col">
+          <div className="col-lg-3 col-md-6 col-sm-12 mt-2 mb-2 d-flex justify-content-center">
             <div className="card p-0">
               <div className="card-image">
                 <img
@@ -40,7 +40,7 @@ const TeamCard = () => {
               </div>
             </div>
           </div>
-          <div className="col">
+          <div className="col-lg-3 col-md-6 col-sm-12 mt-2 mb-2 d-flex justify-content-center">
             <div className="card p-0">
               <div className="card-image">
                 <img
@@ -72,7 +72,7 @@ const TeamCard = () => {
               </div>
             </div>
           </div>
-          <div className="col">
+          <div className="col-lg-3 col-md-6 col-sm-12 mt-2 mb-2 d-flex justify-content-center">
             <div className="card p-0">
               <div className="card-image">
                 <img
@@ -104,7 +104,7 @@ const TeamCard = () => {
               </div>
             </div>
           </div>
-          <div className="col">
+          <div className="col-lg-3 col-md-6 col-sm-12 mt-2 mb-2 d-flex justify-content-center">
             <div className="card p-0">
               <div className="card-image">
                 <img

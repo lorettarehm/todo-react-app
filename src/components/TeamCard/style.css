@@ -7,8 +7,7 @@
   margin-bottom: 5rem;
 }
 
-.container .row .col {
-  /* border: solid 1px red !important; */
+.container .row .col-lg-3 {
   display: flex;
   justify-content: center;
 }
@@ -19,8 +18,8 @@
   margin: 0 !important;
   border-radius: 20px;
   overflow: hidden;
-  /* max-width: 300px;
-  max-height: 300px; */
+  max-width: 20rem;
+  max-height: 70rem;
   cursor: pointer;
   border: none;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
@@ -28,12 +27,12 @@
 
 .card .card-image {
   width: 100%;
-  /* max-height: 300px; */
+  max-height: 70rem;
 }
 
 .card .card-image img {
   width: 100%;
-  /* max-height: 340px; */
+  max-height: 70rem;
   object-fit: cover;
 }
 
