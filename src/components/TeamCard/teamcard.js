@@ -1,16 +1,17 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./style.css";
 
 const TeamCard = () => {
   return (
     <div className="border border-danger">
       <h2 className="text-danger"> This is TEAM CARD </h2>
-      <div className="container my-4">
+      {/* <div className="container my-4">
         <div className="row row-cols-2">
           <div className="col mb-4">
             <div className="card">
               <img
-                src="https://via.placeholder.com/400x250"
+                src="https://via.placeholder.com/50"
                 className="card-img-top"
                 alt="placeholder"
               />
@@ -26,7 +27,7 @@ const TeamCard = () => {
           <div className="col mb-4">
             <div className="card">
               <img
-                src="https://via.placeholder.com/400x250"
+                src="https://via.placeholder.com/50"
                 className="card-img-top"
                 alt="placeholder"
               />
@@ -44,7 +45,7 @@ const TeamCard = () => {
           <div className="col mb-4">
             <div className="card">
               <img
-                src="https://via.placeholder.com/400x250"
+                src="https://via.placeholder.com/50"
                 className="card-img-top"
                 alt="placeholder"
               />
@@ -60,7 +61,7 @@ const TeamCard = () => {
           <div className="col mb-4">
             <div className="card">
               <img
-                src="https://via.placeholder.com/400x250"
+                src="https://via.placeholder.com/50"
                 className="card-img-top"
                 alt="placeholder"
               />
@@ -70,6 +71,140 @@ const TeamCard = () => {
                   Some quick example text to build on the card title and make up
                   the bulk of the card's content.
                 </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> */}
+      <div className="container">
+        <div className="row">
+          <div className="col-md-6">
+            <div className="card p-0">
+              <div className="card-image">
+                <img
+                  src="https://images.pexels.com/photos/2746187/pexels-photo-2746187.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                  alt=""
+                />
+              </div>
+              <div className="card-content d-flex flex-column align-items-center">
+                <h4 className="pt-2">SomeOne Famous</h4>
+                <h5>Creative Desinger</h5>
+
+                <ul className="social-icons d-flex justify-content-center">
+                  <li style={{ "--i": 1 }}>
+                    <a href="/">
+                      <span className="fab fa-facebook"></span>
+                    </a>
+                  </li>
+                  <li style={{ "--i": 2 }}>
+                    <a href="/">
+                      <span className="fab fa-twitter"></span>
+                    </a>
+                  </li>
+                  <li style={{ "--i": 3 }}>
+                    <a href="/">
+                      <span className="fab fa-instagram"></span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div className="col-md-6">
+            <div className="card p-0">
+              <div className="card-image">
+                <img
+                  src="https://images.pexels.com/photos/381843/pexels-photo-381843.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                  alt=""
+                />
+              </div>
+              <div className="card-content d-flex flex-column align-items-center">
+                <h4 className="pt-2">SomeOne Famous</h4>
+                <h5>Creative Desinger</h5>
+
+                <ul className="social-icons d-flex justify-content-center">
+                  <li style={{ "--i": 1 }}>
+                    <a href="/">
+                      <span className="fab fa-facebook"></span>
+                    </a>
+                  </li>
+                  <li style={{ "--i": 2 }}>
+                    <a href="/">
+                      <span className="fab fa-twitter"></span>
+                    </a>
+                  </li>
+                  <li style={{ "--i": 3 }}>
+                    <a href="/">
+                      <span className="fab fa-instagram"></span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-md-6">
+            <div className="card p-0">
+              <div className="card-image">
+                <img
+                  src="https://images.pexels.com/photos/2746187/pexels-photo-2746187.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                  alt=""
+                />
+              </div>
+              <div className="card-content d-flex flex-column align-items-center">
+                <h4 className="pt-2">SomeOne Famous</h4>
+                <h5>Creative Desinger</h5>
+
+                <ul className="social-icons d-flex justify-content-center">
+                  <li style={{ "--i": 1 }}>
+                    <a href="/">
+                      <span className="fab fa-facebook"></span>
+                    </a>
+                  </li>
+                  <li style={{ "--i": 2 }}>
+                    <a href="/">
+                      <span className="fab fa-twitter"></span>
+                    </a>
+                  </li>
+                  <li style={{ "--i": 3 }}>
+                    <a href="/">
+                      <span className="fab fa-instagram"></span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div className="col-md-6">
+            <div className="card p-0">
+              <div className="card-image">
+                <img
+                  src="https://images.pexels.com/photos/381843/pexels-photo-381843.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                  alt=""
+                />
+              </div>
+              <div className="card-content d-flex flex-column align-items-center">
+                <h4 className="pt-2">SomeOne Famous</h4>
+                <h5>Creative Desinger</h5>
+
+                <ul className="social-icons d-flex justify-content-center">
+                  <li style={{ "--i": 1 }}>
+                    <a href="/">
+                      <span className="fab fa-facebook"></span>
+                    </a>
+                  </li>
+                  <li style={{ "--i": 2 }}>
+                    <a href="/">
+                      <span className="fab fa-twitter"></span>
+                    </a>
+                  </li>
+                  <li style={{ "--i": 3 }}>
+                    <a href="/">
+                      <span className="fab fa-instagram"></span>
+                    </a>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>

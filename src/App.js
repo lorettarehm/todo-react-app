@@ -5,6 +5,7 @@ import HeaderPart from "./components/Header/header.js";
 import Footer from "./components/Footer/footer.js";
 import TeamCard from "./components/TeamCard/teamcard.js";
 import "bootstrap/dist/css/bootstrap.min.css";
+// import ImageFooter from "./components/ImageFooter/imgfooter";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <HeaderPart />
         <QuizLogic />
         <TeamCard />
+        {/* <ImageFooter /> */}
         <Footer />
       </header>
     </div>
