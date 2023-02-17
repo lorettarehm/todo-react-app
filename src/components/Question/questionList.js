@@ -1,6 +1,6 @@
 const questionList = [
   {
-   "questionText": "You are visiting Macchu Picchu?",
+   "questionText": "Wich country are you in if you are visiting Macchu Picchu?",
    "answerOptions": [
      { "answerText": "Chile" , "rightChoice": false } ,
      { "answerText": "Panama" , "rightChoice": false } ,
