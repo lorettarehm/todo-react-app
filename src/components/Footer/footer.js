@@ -1,4 +1,3 @@
-// react boilerplate for a footer component
 import React from "react";
 import "./style.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
@@ -7,7 +6,6 @@ function Footer() {
   return (
     <div className="footer border border-warning text-light font-weight-light mt-1">
       <h4 className="text-light">/ FOOTER WITH NETLIFY FORM ACTIVATED/</h4>
-      {/* subscribe to newsletter form using netlify form handling */}
       <div className="container">
         <div className="row">
           <div className="aboutus col-md-4">

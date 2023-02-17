@@ -1,0 +1,12 @@
+img {
+  max-width: auto;
+  max-height: 70rem;
+  display: block; /* remove extra space below image */
+  object-fit: contain;
+  background: rgb(7, 50, 214);
+  background: linear-gradient(
+    90deg,
+    rgba(7, 50, 214, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
