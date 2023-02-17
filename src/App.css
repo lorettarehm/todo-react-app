@@ -1,12 +1,21 @@
+.App {
+  text-align: center;
+  background: url('./components/Header/images/mountains-1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 900px;
+}
+
+html {
+  background-color: #0B0F10 ;
+}
+
 html body {
   background-color: #0a0a0a;
   font-family: "Segoe UI", "Roboto", "Helvetica Neue", "Noto Sans",
     "Liberation Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     "Noto Color Emoji";
-}
-
-.App {
-  text-align: center;
 }
 
 .App-logo {
