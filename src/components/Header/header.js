@@ -92,7 +92,7 @@ function HeaderPart() {
                     <div className="card-body">
                         <h3 className="card-title">Geography Quiz</h3>
                         <p className="card-text">A geography quiz is a fun and engaging way to test your knowledge of the world. These quizzes typically cover a wide range of topics, from the locations and names of different countries to their capital cities, famous landmarks, and natural features. Some quizzes may also include questions about different cultures and customs, as well as historical events and political systems. With enough practice and study, anyone can become a geography whiz and ace their next quiz!</p>
-                        <a href="#" class="btn btn-dark">Play Now</a>
+                        <a href="/#" class="btn btn-dark">Play Now</a>
                     </div>
                 </div>
             </div>
