@@ -1,9 +1,10 @@
-# Getting Started with Create React App
+# Educational Quiz Website.
 
-This project was bootstrapped witsh [Create React App](https://github.com/facebook/create-react-app ).
+This project was bootstrapped witsh [Create React App](https://github.com/facebook/create-react-app).
 
-GITHUB Repository link:
-Netlify Deployment link:
+GITHUB Repository link: https://github.com/lorettarehm/todo-react-app
+
+Netlify Deployment link: https://todo-reactapp-2023.netlify.app/
 
 ## Available Scripts
 
