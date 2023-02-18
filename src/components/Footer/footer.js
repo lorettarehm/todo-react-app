@@ -4,7 +4,7 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 
 function Footer() {
   return (
-    <div className="footer border border-warning text-light font-weight-light mt-1">
+    <div className="footer border border-warning text-light font-weight-light mt-1" id="footer">
       <h4 className="text-light">/ FOOTER WITH NETLIFY FORM ACTIVATED/</h4>
       <div className="container">
         <div className="row">
