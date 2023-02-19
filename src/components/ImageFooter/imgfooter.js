@@ -3,8 +3,8 @@ import "./style.css";
 
 const ImageFooter = () => {
   return (
-    <div className="imgfooter">
-      <img src={`/images/img-footer.jpg`} alt="" />
+    <div className="imgfooter bg-image d-flex justify-content-center align-items-center">
+      <h1 className="text-light">Test for container </h1>
     </div>
   );
 };
