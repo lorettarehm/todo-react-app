@@ -7,6 +7,7 @@ import TeamCard from "./components/TeamCard/teamcard.js";
 import "bootstrap/dist/css/bootstrap.min.css";
 import ImageFooter from "./components/ImageFooter/imgfooter";
 
+
 function App() {
   return (
     <div className="App">

@@ -1,134 +1,190 @@
-
 .navbar li a {
   color: #ffffff;
   font-size: 18px;
- }
- 
- .logo {
-     background-image: url("./images/logo.png");
- }
- /* JUMBOTRON */
- 
- .jumbotron {    
-   background-color: transparent !important;
-     
- }
- 
- .jumbotron p {
-     color: white;
-     text-align: center;
-     padding: 0 10% 5% 10%;
- }
- 
- .jumbotron h1 {
-     color: white;
-     text-align: center;
-     margin-top: 20%;
-     font-size: 4.5rem;
-     padding: 0 0 2% 0;
- }
- 
- .button {
-     color: white;
- }
- 
- 
- 
- /* EXPLORE */
- 
- .explore {
-     color: white;
-     text-align: center;
-     margin: 20% 25% 5% 20%;
-     padding: 10% 0 5% 0;
-     
- }
- 
- .explore p {
-     padding-top: 2%;
- }
- 
- 
- 
- 
- 
- 
- /*
- flip card
- */
- .card-flip > div {
-     backface-visibility: hidden;
-     transition: transform 500ms;
-     transition-timing-function: linear;
-     width: 100%;
-     height: 100%;
-     margin: 0;
-     display: flex;
-     
-   }
+}
+
+.logo {
+  width: 30%;
+}
+
+.btn-outline-light:hover {
+  background-color: #0b0f10 !important;
+}
+
+/* JUMBOTRON */
+
+.jumbotron {
+  background-color: transparent !important;
+}
+
+.jumbotron p {
+  color: white;
+  text-align: center;
+  padding: 0 10% 5% 10%;
+}
+
+.jumbotron h1 {
+  color: white;
+  text-align: center;
+  margin-top: 7%;
+  font-size: 4.5rem;
+  padding: 0 0 2% 0;
+}
+
+.button {
+  color: white;
+}
+
+.button-jumbo {
+  color: white !important;
+  padding: 2rem 2rem !important;
+  border-radius: 3.25rem !important;
+}
+
+.play {
+  padding-left: 10%;
+}
+
+/* EXPLORE */
+
+.explore {
+  color: white;
+  text-align: center;
+  margin: 10% 10% 5% 10%;
+}
+
+.explore p {
+  padding-top: 2%;
+}
+
+.explore h2 {
+  font-size: 3rem;
+}
+
+/* CARDS */
+.card-flip > div {
+  backface-visibility: hidden;
+  transition: transform 500ms;
+  transition-timing-function: linear;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  display: flex;
+}
+
+.card-front {
+  transform: rotateY(0deg);
+}
+
+.card-front h3 {
+  padding-top: 150%;
+  color: white;
+  opacity: 100%;
+}
+
+.card-front p {
+  color: white;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+  position: absolute;
+  top: 0;
+  background-color: ##e7edee;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+  position: absolute;
+  top: 0;
+}
+
+.card-flip:hover .card-front {
+  transform: rotateY(-180deg);
+}
+
+.card-flip:hover .card-back {
+  transform: rotateY(0deg);
+}
+
+.img-1 {
+  background-image: url(./images/card1.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.img-2 {
+  background-image: url(./images/card2.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.img-3 {
+  background-image: url(./images/card3.jpeg);
+  /* -webkit-mask-image: linear-gradient(to top, transparent 0%, black 30%); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.img-geo,
+.img-map {
+  width: 70%;
+}
+
+.img-tall {
+  width: 50%;
+  padding-bottom: 3%;
+}
+
+.play-btn {
+  padding: .50rem 1.25rem !important;
+  font-size: 1rem !important;
+}
+
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 500px) {
+  /* .card-padding {
+    padding-left: 12% !important;
+    padding-bottom: 10% !important;
+  } */
+  .jumbotron p {
+    font-size: 1rem;
+  }
+  
+  .jumbotron h1 {
+    font-size: 3.5rem;
+  }
+
+  .explore p {
+    padding-top: 10%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .card-padding {
+    padding-left: 10% !important;
+  
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .card-padding {
+    padding-left: 8% !important;
    
-   .card-front {
-     transform: rotateY(0deg);
-   }
- 
-   .card-front h3 {
-    padding-top: 150%;
-    color: white;
-    
-   }
- 
-   .card-front p {
-     color: white;
-   }
-   
-   
-   .card-back {
-     transform: rotateY(180deg);
-     position: absolute;
-     top: 0;
-   }
- 
-   .card-back {
-     transform: rotateY(180deg);
-     position: absolute;
-     top: 0;
-   }
-   
-   .card-flip:hover .card-front {
-     transform: rotateY(-180deg);
-   }
-     
-   .card-flip:hover .card-back {
-     transform: rotateY(0deg);
-   }
- 
-   .card {
-     height: 600px;
-     width: 350px;
-     
-   }
- 
-   /* .card-img-top {
-     background-image: ;
-   } */
-   
-   .img-1 {
-     background-image: url(./images/card1.jpeg) ;
-     background-size: cover;
-   background-position: center;
-   background-repeat: no-repeat;
-   }
- 
-   .img-2 {
-     background-image: url(./images/card2.jpeg) ;
-     background-size: cover;
-   background-position: center;
-   background-repeat: no-repeat;
-   }
- 
-   .img-3 {
-     background-image: url(./images/card3.jpeg) ;
-     background-size: cover;
-   background-position: center;
-   background-repeat: no-repeat;
-   }
+  }
+}
+
+/* TABLET */
+@media only screen and (max-width: 1180px) {
+  .card-padding {
+    padding-bottom: 5% !important;
+  }
+  .maps {
+    padding-left: 40%;
+  }
+  
+}

@@ -4,7 +4,7 @@ import "./style.css";
 
 const TeamCard = () => {
   return (
-    <div className="border border-danger">
+    <div className="border border-danger" id="about-us">
       <h2 className="text-danger"> This is TEAM CARD </h2>
       <div className="container">
         <div className="row">
