@@ -1,14 +1,10 @@
 .App {
   text-align: center;
-  background: url('./components/Header/images/mountains-1.jpg');
+  background: url("./components/Header/images/mountains-1.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 900px;
-}
-
-html {
-  background-color: #0B0F10 ;
 }
 
 html body {
@@ -16,17 +12,6 @@ html body {
   font-family: "Segoe UI", "Roboto", "Helvetica Neue", "Noto Sans",
     "Liberation Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     "Noto Color Emoji";
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
 
 /* .App-header {
@@ -57,14 +42,14 @@ html body {
 
 /* Material UI style overrides */
 .MuiButton-root {
-  background: linear-gradient(to bottom, #3a261f, #545d64)!important;
+  background: linear-gradient(to bottom, #3a261f, #545d64) !important;
   color: #fff !important;
-  border-style:none !important;
+  border-style: none !important;
   margin: 1vh !important;
 }
 
 .MuiCard-root {
   background-color: #545d64 !important;
-  background-blend-mode:soft-light;
+  background-blend-mode: soft-light;
   color: #fff !important;
 }
