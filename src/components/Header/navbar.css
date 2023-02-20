@@ -1,0 +1,34 @@
+.navbar a {
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.logo {
+  width: 30%;
+}
+
+#navbarsExample09 {
+  padding-left: 30%;
+}
+
+.custom-toggler {
+  background-color: #0b0f10;
+  color: white;
+}
+
+@media only screen and (max-width: 500px) {
+  .navbar-collapse {
+    background-color: #0b0f10;
+    padding: 10%;
+  }
+
+  .navbar-collapse a {
+    padding-right: 30%;
+  }
+}
+
+.nav-link:hover {
+    color: #0b0f10;
+} 
+
+
