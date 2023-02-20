@@ -8,7 +8,6 @@ function Footer() {
       className="footer border border-warning text-light font-weight-light mt-1"
       id="footer"
     >
-      <h4 className="text-light">/ FOOTER WITH NETLIFY FORM ACTIVATED/</h4>
       <div className="container">
         <div className="row">
           <div className="aboutus col-md-4">
@@ -20,9 +19,17 @@ function Footer() {
               explore and learn about the world.
             </p>
           </div>
+          <div className="copyright col-md-4">
+            <div className="logofab4">
+              <img src="/images/logo-fab4.png" alt="Fab4Coder Logo" />
+            </div>
+            <div className="copyrightlogo">
+              <p>&copy; 2023. The Fab 4 Dev. All Rights Reserved </p>
+            </div>
+          </div>
           <div className="followus col-md-4">
             <h5>Follow Us</h5>
-            <ul className="list-unstyled d-flex justify-content-around ">
+            <ul className="list-unstyled d-flex justify-content-around mt-3">
               <li>
                 <a href="https://twitter.com/your-twitter-account">
                   <i className="fab fa-twitter"></i>
@@ -40,44 +47,8 @@ function Footer() {
               </li>
             </ul>
           </div>
-          <div className="subform col-md-4">
-            <h5>Subscribe to our Newsletter:</h5>
-            <form
-              name="contact"
-              method="POST"
-              data-netlify="true"
-              data-netlify-honeypot="bot-field"
-            >
-              <input type="hidden" name="form-name" value="contact" />
-              <div className="form-group">
-                <input
-                  type="text"
-                  className="form-control form-control-sm"
-                  id="InputName"
-                  placeholder="Name"
-                />
-              </div>
-              <div className="form-group">
-                <input
-                  type="email"
-                  className="form-control form-control-sm"
-                  id="InputEmail"
-                  placeholder="Email"
-                />
-              </div>
-              <button
-                type="submit"
-                className="btn btn-primary btn-block btn-sm"
-              >
-                Subscribe
-              </button>
-            </form>
-          </div>
         </div>
-        <div className="copyright mt-3 d-flex justify-content-center ">
-          {/* <img src="https://via.placeholder.com/20" alt="Fab4Coder Logo" /> */}
-          <p>&copy; 2023 The Fab 4 Coder. All Rights Reserved </p>
-        </div>
+        <div className="copyright mt-3 d-flex justify-content-center "></div>
       </div>
     </div>
   );
