@@ -4,7 +4,10 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 
 function Footer() {
   return (
-    <div className="footer border border-warning text-light font-weight-light mt-1" id="footer">
+    <div
+      className="footer border border-warning text-light font-weight-light mt-1"
+      id="footer"
+    >
       <h4 className="text-light">/ FOOTER WITH NETLIFY FORM ACTIVATED/</h4>
       <div className="container">
         <div className="row">
@@ -71,7 +74,7 @@ function Footer() {
             </form>
           </div>
         </div>
-        <div className="copyright mt-3 d-flex justify-content-center border ">
+        <div className="copyright mt-3 d-flex justify-content-center ">
           {/* <img src="https://via.placeholder.com/20" alt="Fab4Coder Logo" /> */}
           <p>&copy; 2023 The Fab 4 Coder. All Rights Reserved </p>
         </div>

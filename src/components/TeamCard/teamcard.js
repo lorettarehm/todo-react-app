@@ -17,7 +17,7 @@ const TeamCard = () => {
                 />
               </div>
               <div className="card-content d-flex flex-column align-items-center">
-                <h4 className="pt-2">Card 1</h4>
+                <h4 className="pt-2">Loretta </h4>
                 <h5>Creative Desinger</h5>
 
                 <ul className="social-icons d-flex justify-content-center">
@@ -49,7 +49,7 @@ const TeamCard = () => {
                 />
               </div>
               <div className="card-content d-flex flex-column align-items-center">
-                <h4 className="pt-2">Card 2</h4>
+                <h4 className="pt-2">Alina Tudor</h4>
                 <h5>Creative Desinger</h5>
 
                 <ul className="social-icons d-flex justify-content-center">
@@ -81,7 +81,7 @@ const TeamCard = () => {
                 />
               </div>
               <div className="card-content d-flex flex-column align-items-center">
-                <h4 className="pt-2">Card 3</h4>
+                <h4 className="pt-2">Ian Cheng</h4>
                 <h5>Creative Desinger</h5>
 
                 <ul className="social-icons d-flex justify-content-center">
@@ -113,7 +113,7 @@ const TeamCard = () => {
                 />
               </div>
               <div className="card-content d-flex flex-column align-items-center">
-                <h4 className="pt-2">Card 4</h4>
+                <h4 className="pt-2">Husain F Hidayah</h4>
                 <h5>Creative Desinger</h5>
 
                 <ul className="social-icons d-flex justify-content-center">
