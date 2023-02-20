@@ -3,43 +3,10 @@ import "./header.css";
 import geo from "./images/geo.png";
 import tall from "./images/tallest-v2.png";
 import map from "./images/map.png";
-import logo from "./images/logo.png";
-
-
-
-
 
 function HeaderPart() {
   return (
-    <div>
-      <nav class="navbar navbar-expand-lg navbar-dark navbarNav">
-    <div class="container-fluid">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon burger-menu"></span>
-      </button>
-
-      <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarNav">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/app.js">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/#about-us">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/#"><img class="logo" src={logo} /></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/#more-link">More Quizzes</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/#footer">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
+    <><div>
       <div className="jumbotron">
         <h1 className="">The Geo Quiz</h1>
         <p className="lead">
@@ -60,8 +27,8 @@ function HeaderPart() {
       </div>
 
       <div className="explore">
-        <h2>Explore the quizzes</h2>
-        <p id="more-link">
+        <h2 id="more-link">Explore the quizzes</h2>
+        <p>
           Explore Quizzes is a great way to test your knowledge of geography,
           maps, and the world's highest points. With these quizzes, you can
           challenge yourself to identify countries and their capitals, locate
@@ -75,7 +42,7 @@ function HeaderPart() {
 
       <div className="container">
         <div className="row">
-          <div className="col-sm-4 col-md-6 col-lg-4 card-padding">
+          <div className="col-sm-6 col-md-4 col-lg-4 mb-4">
             <div className="card card-flip h-100">
               <div className="card-front ">
                 <div className="card-body img-1">
@@ -83,7 +50,7 @@ function HeaderPart() {
                   <p className="card-text">Taking a geography quiz</p>
                 </div>
               </div>
-              <div className="card-back bg-white">
+              <div className="card-back">
                 <div className="card-body">
                   <h3 className="card-title">Geography</h3>
                   <img className="img-geo" src={geo} />
@@ -94,13 +61,15 @@ function HeaderPart() {
                     anyone can become a geography whiz and ace their next quiz!
                     anyone can become a geography whiz and ace their next quiz!
                   </p>
-                  <button type="button" class="btn btn-secondary play-btn">Play Now</button>
+                  <button type="button" class="btn btn-secondary play-btn">
+                    Play Now
+                  </button>
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="col-sm-4 col-md-6 col-lg-4 card-padding">
+          <div className="col-sm-6 col-md-4 col-lg-4 mb-4">
             <div className="card card-flip h-100">
               <div className="card-front">
                 <div className="card-body img-2">
@@ -132,15 +101,15 @@ function HeaderPart() {
             </div>
           </div>
 
-          <div className="col-sm-4 col-md-12 col-lg-4 card-padding">
-            <div className="card card-flip h-100">
+          <div className="col-sm-6 col-md-4 col-lg-4 mb-4">
+            <div className="card card-flip h-100 ">
               <div className="card-front">
                 <div className="card-body img-3">
                   <h3 className="card-title">Maps</h3>
                   <p className="card-text">Coming Soon</p>
                 </div>
               </div>
-              <div className="card-back bg-white">
+              <div className="card-back">
                 <div className="card-body ">
                   <h3 className="card-title">Map</h3>
                   <img className="img-map" src={map} />
@@ -167,6 +136,7 @@ function HeaderPart() {
         </div>
       </div>
     </div>
+   </>
   );
 }
 

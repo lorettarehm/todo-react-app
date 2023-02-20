@@ -1,16 +1,3 @@
-.navbar li a {
-  color: #ffffff;
-  font-size: 18px;
-}
-
-.logo {
-  width: 30%;
-}
-
-.btn-outline-light:hover {
-  background-color: #0b0f10 !important;
-}
-
 /* JUMBOTRON */
 
 .jumbotron {
@@ -45,6 +32,10 @@
   padding-left: 10%;
 }
 
+.button-jumbo:hover {
+  color: #0B0F10 !important;
+}
+
 /* EXPLORE */
 
 .explore {
@@ -74,6 +65,7 @@
 
 .card-front {
   transform: rotateY(0deg);
+  
 }
 
 .card-front h3 {
@@ -90,7 +82,7 @@
   transform: rotateY(180deg);
   position: absolute;
   top: 0;
-  background-color: ##e7edee;
+  background-color: #e7edee;
 }
 
 .card-back {
@@ -141,16 +133,17 @@
 .play-btn {
   padding: .50rem 1.25rem !important;
   font-size: 1rem !important;
+  background-color: #0B0F10 !important;
 }
 
 
 /* RESPONSIVE */
 
 @media only screen and (max-width: 500px) {
-  /* .card-padding {
+  .card-padding {
     padding-left: 12% !important;
     padding-bottom: 10% !important;
-  } */
+  }
   .jumbotron p {
     font-size: 1rem;
   }
@@ -164,27 +157,30 @@
   }
 }
 
+
 @media only screen and (max-width: 500px) {
   .card-padding {
     padding-left: 10% !important;
+    
   
   }
-}
+  
+} 
 
-@media only screen and (max-width: 900px) {
+ @media only screen and (max-width: 900px) {
   .card-padding {
-    padding-left: 8% !important;
+    padding-left: 10% !important;
    
   }
-}
+} 
 
 /* TABLET */
 @media only screen and (max-width: 1180px) {
   .card-padding {
-    padding-bottom: 5% !important;
+    min-height: 140px;
+  width: 100%;
+  padding-left: 0 !important;
   }
-  .maps {
-    padding-left: 40%;
-  }
+
   
 }
