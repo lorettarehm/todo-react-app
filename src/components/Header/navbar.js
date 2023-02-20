@@ -9,7 +9,7 @@ const TopNav = (props) => {
 
   return (
     <nav class="navbar navbar-expand-lg navbar-dark">
-      <a class="navbar-brand text-info font-weight-bolder" href="/"></a>
+      <a class="navbar-brand text-info font-weight-bolder" href="/#"></a>
       <button
         class="custom-toggler navbar-toggler"
         type="button"
@@ -35,7 +35,7 @@ const TopNav = (props) => {
         </a>
 
         <a class="nav-link" href="/#">
-          <img class="logo" src={logo} />
+          <img class="logo" src={logo} alt="Logo"/>
         </a>
         <a class="nav-link" href="/#more-link">
           More Quizzes

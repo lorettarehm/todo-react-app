@@ -53,7 +53,7 @@ function HeaderPart() {
               <div className="card-back">
                 <div className="card-body">
                   <h3 className="card-title">Geography</h3>
-                  <img className="img-geo" src={geo} />
+                  <img className="img-geo" src={geo} alt="World globe with clouds"/>
                   <p className="card-text">
                     A geography quiz is a fun and engaging way to test your
                     knowledge of the world. With enough practice and study,
@@ -80,7 +80,7 @@ function HeaderPart() {
               <div className="card-back">
                 <div className="card-body">
                   <h3 className="card-title">Which is the tallest?</h3>
-                  <img className="img-tall" src={tall} />
+                  <img className="img-tall" src={tall} alt="Tall skyscraper"/>
                   <p className="card-text">
                     the tallest mountain on each continent, as well as some of
                     the most famous peaks around the world. Whether you're an
@@ -89,7 +89,7 @@ function HeaderPart() {
                     the tallest" quiz can be a great way to expand your
                     knowledge and test your skills.
                   </p>
-                  <a
+                  <a href="/#"
                     class="btn btn-secondary btn-sm active play-btn"
                     role="button"
                     aria-pressed="true"
@@ -112,7 +112,7 @@ function HeaderPart() {
               <div className="card-back">
                 <div className="card-body ">
                   <h3 className="card-title">Map</h3>
-                  <img className="img-map" src={map} />
+                  <img className="img-map" src={map} alt="Green map with pins"/>
                   <p className="card-text">
                     A map quiz is a fun and educational way to test your
                     knowledge of geography. Whether you're a student, a

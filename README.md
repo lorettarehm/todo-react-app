@@ -1,6 +1,7 @@
 # Educational Quiz Website.
+![badmath](https://img.shields.io/badge/JavaScript-77%25-%23efd81d)&nbsp;&nbsp;&nbsp;![badmath](https://img.shields.io/badge/CSS-22%25-%23563d7c)&nbsp;&nbsp;&nbsp;![badmath](https://img.shields.io/badge/HTML-1%25-%23e34c26)
 
-This project was bootstrapped witsh [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 GITHUB Repository link: https://github.com/lorettarehm/todo-react-app
 
