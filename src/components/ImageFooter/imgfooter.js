@@ -5,7 +5,7 @@ const ImageFooter = () => {
   return (
     <div className="imgfooter bg-image text-light d-flex align-items-center">
       <div className="row">
-        <div className="subcopy col-md-6 border">
+        <div className="subcopy col-md-6">
           <h5 className="">Newsletter Subscription</h5>
           <p className="">
             Subscribe to our educational quiz website and stay up-to-date with
@@ -14,8 +14,8 @@ const ImageFooter = () => {
             spam you or share your information with any third parties.
           </p>
         </div>
-        <div className="newsform col-md-6 border">
-          <div className="subform">
+        <div className="newsform col-md-6 d-flex justify-content-end">
+          <div className="subform ">
             <h5>Subscribe to our Newsletter:</h5>
             <form
               name="contact"
@@ -27,22 +27,18 @@ const ImageFooter = () => {
               <div className="form-group">
                 <input
                   type="text"
-                  className="form-control form-control-sm rounded-6"
+                  className="form-control form-control-sm rounded-6 transparentinput"
                   id="InputName"
+                  placeholder="Name"
                 />
-                <span className="highlight"></span>
-                <span className="bar"></span>
-                <label for="name" title="Name" data-title="Name">
-                  Name
-                </label>
               </div>
               <div className="form-group">
                 <input
                   type="email"
-                  className="form-control form-control-sm rounded-6"
+                  className="form-control form-control-sm rounded-6 transparentinput"
                   id="InputEmail"
+                  placeholder="Email"
                 />
-                <label for="email" title="Email" data-title="Email"></label>
               </div>
               <button
                 type="submit"
