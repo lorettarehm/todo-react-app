@@ -61,7 +61,7 @@ function HeaderPart() {
                     anyone can become a geography whiz and ace their next quiz!
                     anyone can become a geography whiz and ace their next quiz!
                   </p>
-                  <button type="button" class="btn btn-secondary play-btn">
+                  <button type="button" className="btn btn-secondary play-btn">
                     Play Now
                   </button>
                 </div>
@@ -90,7 +90,7 @@ function HeaderPart() {
                     knowledge and test your skills.
                   </p>
                   <a href="/#"
-                    class="btn btn-secondary btn-sm active play-btn"
+                    className="btn btn-secondary btn-sm active play-btn"
                     role="button"
                     aria-pressed="true"
                   >
@@ -123,7 +123,7 @@ function HeaderPart() {
                   </p>
                   <a
                     href="/#"
-                    class="btn btn-secondary btn-sm active play-btn"
+                    className="btn btn-secondary btn-sm active play-btn"
                     role="button"
                     aria-pressed="true"
                   >
