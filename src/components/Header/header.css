@@ -158,13 +158,24 @@
 }
 
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 680px) {
   .card-padding {
-    padding-left: 10% !important;
-    
+    padding-left: 10% !important;   
   
   }
-  
+  .card-back p {
+
+    font-size: 500px;
+    }
+    
+    .card-back h3 {
+    
+      font-size: 30px;
+      }
+    
+    .img-geo, .img-tall, .img-map {
+      width: 50%;
+    }
 } 
 
  @media only screen and (max-width: 900px) {
@@ -181,6 +192,18 @@
   width: 100%;
   padding-left: 0 !important;
   }
+.card-back p {
 
+font-size: 11.5px;
+}
+
+.card-back h3 {
+
+  font-size: px;
+  }
+
+.img-geo, .img-tall, .img-map {
+  width: 50%;
+}
   
 }
