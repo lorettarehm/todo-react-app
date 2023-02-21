@@ -6,23 +6,18 @@ import HeaderPart from "./components/Header/header.js";
 import Footer from "./components/Footer/footer.js";
 import TeamCard from "./components/TeamCard/teamcard.js";
 import TopNav from "./components/Header/navbar.js";
-// import ImageFooter from "./components/ImageFooter/imgfooter";
+import ImageFooter from "./components/ImageFooter/imgfooter";
 
 function App() {
-
   return (
     <div className="App">
       <header className="App-header">
         <TopNav />
         <HeaderPart />
         {/* Check if quiz should be rendered */}
-        { true ? 
-          <QuizLogic /> 
-        : 
-          null 
-        }
+        {true ? <QuizLogic /> : null}
         <TeamCard />
-        {/* <ImageFooter /> */}
+        <ImageFooter />
         <Footer />
       </header>
     </div>

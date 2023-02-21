@@ -1,12 +1,49 @@
-img {
-  max-width: auto;
-  max-height: 70rem;
-  display: block; /* remove extra space below image */
-  object-fit: contain;
-  background: rgb(7, 50, 214);
-  background: linear-gradient(
-    90deg,
-    rgba(7, 50, 214, 1) 0%,
-    rgba(255, 255, 255, 1) 100%
-  );
+.imgfooter {
+  position: relative;
+  background-image: linear-gradient(
+      0deg,
+      rgba(11, 15, 16, 1) 0%,
+      rgba(63, 75, 109, 0.5) 25%,
+      rgba(63, 75, 109, 0.5) 75%,
+      rgba(11, 15, 16, 1) 100%
+    ),
+    url("/public/images/img-footer2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 50vh;
+}
+
+.subcopy {
+  text-align: left;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.newsform {
+  padding-right: 4rem;
+  padding-left: 4rem;
+}
+
+.subform {
+  width: 70%;
+}
+
+.transparentinput {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  color: white;
+}
+
+.transparentinput::placeholder {
+  color: white;
+}
+
+.transparentinput:focus {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  color: white;
 }

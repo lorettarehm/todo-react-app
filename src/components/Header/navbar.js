@@ -35,7 +35,7 @@ const TopNav = (props) => {
         </a>
 
         <a className="nav-link" href="/#">
-          <img className="logo" src={logo} alt="Logo"/>
+          <img className="logo" src={logo} alt="Logo" />
         </a>
         <a className="nav-link" href="/#more-link">
           More Quizzes

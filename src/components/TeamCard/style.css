@@ -2,6 +2,24 @@
   box-sizing: border-box;
 }
 
+/* Setting to include background image in teamcard */
+.imgteamcard {
+  /* position: relative; */
+  background-image: linear-gradient(
+      0deg,
+      rgba(11, 15, 16, 1) 0%,
+      rgba(63, 75, 109, 0.5) 25%,
+      rgba(63, 75, 109, 0.5) 75%,
+      rgba(11, 15, 16, 1) 100%
+    ),
+    url("/public/images/img-teamcard.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 50vh;
+}
+
 .container {
   margin-top: 5rem;
   margin-bottom: 5rem;
@@ -15,11 +33,11 @@
 .card {
   position: relative;
   padding: 0;
-  margin: 0 !important;
+  margin: 0;
   border-radius: 20px;
   overflow: hidden;
   max-width: 20rem;
-  max-height: 70rem;
+  max-height: 40rem;
   cursor: pointer;
   border: none;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
@@ -28,19 +46,19 @@
 
 .card .card-image {
   width: 100%;
-  max-height: 70rem;
+  max-height: 40rem;
 }
 
 .card .card-image img {
   width: 100%;
-  max-height: 70rem;
+  max-height: 40rem;
   object-fit: cover;
 }
 
 .card .card-content {
   position: absolute;
   bottom: -200px;
-  /* color: #fff; */
+  color: #fff;
   background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(15px);
   min-height: 140px;
@@ -103,13 +121,3 @@
 .card .card-content .social-icons li a span {
   font-size: 1.3rem;
 }
-
-/* @media (max-width: 991.5px) {
-  .container {
-    margin-top: 20px;
-  }
-
-  .container .row .col-md-6 {
-    margin: 20px 0px;
-  }
-} */

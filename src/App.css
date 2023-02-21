@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background: url('./components/Header/images/mountains-1.jpg');
+  background: url("./components/Header/images/mountains-1.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -8,8 +8,7 @@
 }
 
 html {
-  background-color: #0B0F10 ;
-  
+  background-color: #0b0f10;
 }
 
 html body {
@@ -17,9 +16,8 @@ html body {
   font-family: "Segoe UI", "Roboto", "Helvetica Neue", "Noto Sans",
     "Liberation Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     "Noto Color Emoji";
-    width: 100%;
+  width: 100%;
 }
-
 
 .jumbotron {
   background-color: transparent !;
