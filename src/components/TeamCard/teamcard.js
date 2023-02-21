@@ -1,6 +1,10 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./style.css";
+import AT_image from "./images/AT.jfif";
+import HH_image from "./images/HH.jfif";
+import IC_image from "./images/IC.jfif";
+import LR_image from "./images/LR.jpg";
 
 const TeamCard = () => {
   return (
@@ -11,61 +15,26 @@ const TeamCard = () => {
           <div className="col-lg-3 col-md-6 col-sm-12 mt-2 mb-2 d-flex justify-content-center">
             <div className="card p-0">
               <div className="card-image">
-                <img
-                  src="https://images.pexels.com/photos/381843/pexels-photo-381843.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                  alt=""
-                />
-              </div>
-              <div className="card-content d-flex flex-column align-items-center">
-                <h4 className="pt-2">Loretta </h4>
-                <h5>Creative Desinger</h5>
-
-                <ul className="social-icons d-flex justify-content-center">
-                  <li style={{ "--i": 1 }}>
-                    <a href="/">
-                      <span className="fab fa-facebook"></span>
-                    </a>
-                  </li>
-                  <li style={{ "--i": 2 }}>
-                    <a href="/">
-                      <span className="fab fa-twitter"></span>
-                    </a>
-                  </li>
-                  <li style={{ "--i": 3 }}>
-                    <a href="/">
-                      <span className="fab fa-instagram"></span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-3 col-md-6 col-sm-12 mt-2 mb-2 d-flex justify-content-center">
-            <div className="card p-0">
-              <div className="card-image">
-                <img
-                  src="https://images.pexels.com/photos/381843/pexels-photo-381843.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                  alt=""
-                />
+                <img src={AT_image} alt="" />
               </div>
               <div className="card-content d-flex flex-column align-items-center">
                 <h4 className="pt-2">Alina Tudor</h4>
-                <h5>Creative Desinger</h5>
+                <h5>Developer</h5>
 
                 <ul className="social-icons d-flex justify-content-center">
                   <li style={{ "--i": 1 }}>
-                    <a href="/">
-                      <span className="fab fa-facebook"></span>
+                    <a href="mailto:alina_tca@yahoo.com">
+                      <span className="fa fa-envelope"></span>
                     </a>
                   </li>
                   <li style={{ "--i": 2 }}>
-                    <a href="/">
-                      <span className="fab fa-twitter"></span>
+                    <a href="https://github.com/alinatca">
+                      <span className="fab fa-github"></span>
                     </a>
                   </li>
                   <li style={{ "--i": 3 }}>
-                    <a href="/">
-                      <span className="fab fa-instagram"></span>
+                    <a href="https://www.linkedin.com/in/alina-tudor-7a1047168/">
+                      <span className="fab fa-linkedin"></span>
                     </a>
                   </li>
                 </ul>
@@ -75,29 +44,55 @@ const TeamCard = () => {
           <div className="col-lg-3 col-md-6 col-sm-12 mt-2 mb-2 d-flex justify-content-center">
             <div className="card p-0">
               <div className="card-image">
-                <img
-                  src="https://images.pexels.com/photos/381843/pexels-photo-381843.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                  alt=""
-                />
+                <img src={HH_image} alt="" />
+              </div>
+              <div className="card-content d-flex flex-column align-items-center">
+                <h4 className="pt-2">Husain Hidayah</h4>
+                <h5>Developer</h5>
+
+                <ul className="social-icons d-flex justify-content-center">
+                  <li style={{ "--i": 1 }}>
+                    <a href="mailto:h-fikri@yahoo.com">
+                      <span className="fa fa-envelope"></span>
+                    </a>
+                  </li>
+                  <li style={{ "--i": 2 }}>
+                    <a href="https://github.com/h-fikri">
+                      <span className="fab fa-github"></span>
+                    </a>
+                  </li>
+                  <li style={{ "--i": 3 }}>
+                    <a href="https://www.linkedin.com/in/h-fikri">
+                      <span className="fab fa-linkedin"></span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-3 col-md-6 col-sm-12 mt-2 mb-2 d-flex justify-content-center">
+            <div className="card p-0">
+              <div className="card-image">
+                <img src={IC_image} alt="" />
               </div>
               <div className="card-content d-flex flex-column align-items-center">
                 <h4 className="pt-2">Ian Cheng</h4>
-                <h5>Creative Desinger</h5>
+                <h5>Developer</h5>
 
                 <ul className="social-icons d-flex justify-content-center">
                   <li style={{ "--i": 1 }}>
-                    <a href="/">
-                      <span className="fab fa-facebook"></span>
+                    <a href="mailto:iancheng29012@gmail.com">
+                      <span className="fa fa-envelope"></span>
                     </a>
                   </li>
                   <li style={{ "--i": 2 }}>
-                    <a href="/">
-                      <span className="fab fa-twitter"></span>
+                    <a href="https://github.com/ian29012">
+                      <span className="fab fa-github"></span>
                     </a>
                   </li>
                   <li style={{ "--i": 3 }}>
-                    <a href="/">
-                      <span className="fab fa-instagram"></span>
+                    <a href="https://www.linkedin.com/in/iancheng2901">
+                      <span className="fab fa-linkedin"></span>
                     </a>
                   </li>
                 </ul>
@@ -107,29 +102,26 @@ const TeamCard = () => {
           <div className="col-lg-3 col-md-6 col-sm-12 mt-2 mb-2 d-flex justify-content-center">
             <div className="card p-0">
               <div className="card-image">
-                <img
-                  src="https://images.pexels.com/photos/381843/pexels-photo-381843.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                  alt=""
-                />
+                <img src={LR_image} alt="" />
               </div>
               <div className="card-content d-flex flex-column align-items-center">
-                <h4 className="pt-2">Husain F Hidayah</h4>
-                <h5>Creative Desinger</h5>
+                <h4 className="pt-2">Loretta Rehm</h4>
+                <h5>Developer</h5>
 
                 <ul className="social-icons d-flex justify-content-center">
                   <li style={{ "--i": 1 }}>
-                    <a href="/">
-                      <span className="fab fa-facebook"></span>
+                    <a href="mailto:loretta.rehm@gmail.com">
+                      <span className="fa fa-envelope"></span>
                     </a>
                   </li>
                   <li style={{ "--i": 2 }}>
-                    <a href="/">
-                      <span className="fab fa-twitter"></span>
+                    <a href="https://github.com/lorettarehm">
+                      <span className="fab fa-github"></span>
                     </a>
                   </li>
                   <li style={{ "--i": 3 }}>
-                    <a href="/">
-                      <span className="fab fa-instagram"></span>
+                    <a href="https://www.linkedin.com/in/lorettarehm">
+                      <span className="fab fa-linkedin"></span>
                     </a>
                   </li>
                 </ul>
