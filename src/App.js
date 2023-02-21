@@ -14,8 +14,7 @@ function App() {
       <header className="App-header">
         <TopNav />
         <HeaderPart />
-        {/* Check if quiz should be rendered */}
-        {true ? <QuizLogic /> : null}
+      
         <TeamCard />
         <ImageFooter />
         <Footer />
