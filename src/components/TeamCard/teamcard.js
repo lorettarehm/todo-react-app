@@ -52,7 +52,7 @@ const TeamCard = () => {
 
                 <ul className="social-icons d-flex justify-content-center">
                   <li style={{ "--i": 1 }}>
-                    <a href="mailto:h-fikri@yahoo.com">
+                    <a href="mailto:husain.fikri@gmail.com">
                       <span className="fa fa-envelope"></span>
                     </a>
                   </li>
@@ -62,7 +62,7 @@ const TeamCard = () => {
                     </a>
                   </li>
                   <li style={{ "--i": 3 }}>
-                    <a href="https://www.linkedin.com/in/h-fikri">
+                    <a href="https://www.linkedin.com/in/husain-fikri-hidayah-0151158a/">
                       <span className="fab fa-linkedin"></span>
                     </a>
                   </li>
