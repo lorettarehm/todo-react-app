@@ -23,6 +23,7 @@
   cursor: pointer;
   border: none;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  background-color: #5a5a5a;
 }
 
 .card .card-image {

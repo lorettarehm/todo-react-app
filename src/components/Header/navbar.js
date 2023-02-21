@@ -8,10 +8,10 @@ const TopNav = (props) => {
   const handleNavCollapse = () => setIsNavCollapsed(!isNavCollapsed);
 
   return (
-    <nav class="navbar navbar-expand-lg navbar-dark">
-      <a class="navbar-brand text-info font-weight-bolder" href="/"></a>
+    <nav className="navbar navbar-expand-lg navbar-dark">
+      <a className="navbar-brand text-info font-weight-bolder" href="/#"></a>
       <button
-        class="custom-toggler navbar-toggler"
+        className="custom-toggler navbar-toggler"
         type="button"
         data-toggle="collapse"
         data-target="#navbarsExample09"
@@ -20,27 +20,27 @@ const TopNav = (props) => {
         aria-label="Toggle navigation"
         onClick={handleNavCollapse}
       >
-        <span class="navbar-toggler-icon"></span>
+        <span className="navbar-toggler-icon"></span>
       </button>
 
       <div
-        class={`${isNavCollapsed ? "collapse" : ""} navbar-collapse`}
+        className={`${isNavCollapsed ? "collapse" : ""} navbar-collapse`}
         id="navbarsExample09"
       >
-        <a class="nav-link active" aria-current="page" href="/app.js">
+        <a className="nav-link active" aria-current="page" href="/app.js">
           Home
         </a>
-        <a class="nav-link" href="/#about-us">
+        <a className="nav-link" href="/#about-us">
           About Us
         </a>
 
-        <a class="nav-link" href="/#">
-          <img class="logo" src={logo} />
+        <a className="nav-link" href="/#">
+          <img className="logo" src={logo} alt="Logo"/>
         </a>
-        <a class="nav-link" href="/#more-link">
+        <a className="nav-link" href="/#more-link">
           More Quizzes
         </a>
-        <a class="nav-link" href="/#footer">
+        <a className="nav-link" href="/#footer">
           Contact
         </a>
       </div>
