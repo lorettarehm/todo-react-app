@@ -3,11 +3,20 @@ import "./header.css";
 import geo from "./images/geo.png";
 import tall from "./images/tallest-v2.png";
 import map from "./images/map.png";
+import QuizLogic from "./quizLogic";
 
 function HeaderPart() {
+  const [displayQuiz, setDisplayQuiz] = useState(false);
 
+  const handleQuizDisplay = () => {
+    setDisplayQuiz(true);
+  }
   return (
-    <><div>
+    <>
+      {displayQuiz ? (
+         <QuizLogic />
+      ) : (
+    <div>
       <div className="jumbotron">
         <h1 className="">The Geo Quiz</h1>
         <p className="lead">
@@ -19,7 +28,7 @@ function HeaderPart() {
           type="button"
           className="btn btn-outline-light button-jumbo"
           aria-label="Center Align"
-          // onClick={} - How to update the variable that displays the quiz?
+          onClick={handleQuizDisplay} // onClick={} - How to update the variable that displays the quiz?
         >
           <span
             className="fa-solid fa-play fa-2xl play"
@@ -28,6 +37,8 @@ function HeaderPart() {
         </button>
       </div>
 
+
+      {displayQuiz && <QuizLogic />}
       <div className="explore">
         <h2 id="more-link">Explore the quizzes</h2>
         <p>
@@ -57,13 +68,8 @@ function HeaderPart() {
                   <h3 className="card-title">Geography</h3>
                   <img className="img-geo" src={geo} alt="World globe with clouds"/>
                   <p className="card-text">
-                    A geography quiz is a fun and engaging way to test your
-                    knowledge of the world. With enough practice and study,
-                    anyone can become a geography whiz and ace their next quiz!
-                    anyone can become a geography whiz and ace their next quiz!
-                    anyone can become a geography whiz and ace their next quiz!
-                  </p>
-                  <button type="button" className="btn btn-secondary play-btn">
+                  Are you a geography buff or simply curious about the world? Put your knowledge to the test with our Geography Quiz! From continents and countries to capital cities and natural wonders, this quiz covers a range of topics to challenge even the most seasoned travelers and explorers.                  </p>
+                  <button type="button" onClick={handleQuizDisplay} className="btn btn-secondary play-btn">
                     Play Now
                   </button>
                 </div>
@@ -138,8 +144,11 @@ function HeaderPart() {
         </div>
       </div>
     </div>
+      )}
    </>
   );
 }
 
 export default HeaderPart;
+
+
