@@ -2,7 +2,7 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./style.css";
 import AT_image from "./images/AT.jfif";
-import HH_image from "./images/HH.jfif";
+import HH_image from "./images/HH.jpg";
 import IC_image from "./images/IC.jfif";
 import LR_image from "./images/LR.jpg";
 
