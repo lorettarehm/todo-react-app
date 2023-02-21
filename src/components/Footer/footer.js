@@ -4,19 +4,15 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 
 function Footer() {
   return (
-    <div
-      className="footer border border-warning text-light font-weight-light mt-1"
-      id="footer"
-    >
+    <div className="footer text-light font-weight-light" id="footer">
       <div className="container">
         <div className="row">
           <div className="aboutus col-md-4">
             <h5>About Us</h5>
             <p className="text-left">
               The Fab 4 Coder is a team of junior developers who provide
-              engaging geography quizzes. We aim to make learning accessible and
-              enjoyable for all, inspiring a love for geography. Join us to
-              explore and learn about the world.
+              engaging geography quizzes. Join us to explore and learn about the
+              world.
             </p>
           </div>
           <div className="copyright col-md-4">
