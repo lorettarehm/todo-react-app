@@ -8,8 +8,7 @@ import LR_image from "./images/LR.jpg";
 
 const TeamCard = () => {
   return (
-    <div className="border border-danger" id="about-us">
-      <h2 className="text-danger"> This is TEAM CARD </h2>
+    <div className="teamcardbox imgteamcard" id="about-us">
       <div className="container">
         <div className="row">
           <div className="col-lg-3 col-md-6 col-sm-12 mt-2 mb-2 d-flex justify-content-center">
@@ -23,17 +22,20 @@ const TeamCard = () => {
 
                 <ul className="social-icons d-flex justify-content-center">
                   <li style={{ "--i": 1 }}>
-                    <a href="mailto:alina_tca@yahoo.com">
+                    <a href="mailto:alina_tca@yahoo.com" target="_blank">
                       <span className="fa fa-envelope"></span>
                     </a>
                   </li>
                   <li style={{ "--i": 2 }}>
-                    <a href="https://github.com/alinatca">
+                    <a href="https://github.com/alinatca" target="_blank">
                       <span className="fab fa-github"></span>
                     </a>
                   </li>
                   <li style={{ "--i": 3 }}>
-                    <a href="https://www.linkedin.com/in/alina-tudor-7a1047168/">
+                    <a
+                      href="https://www.linkedin.com/in/alina-tudor-7a1047168/"
+                      target="_blank"
+                    >
                       <span className="fab fa-linkedin"></span>
                     </a>
                   </li>
@@ -52,17 +54,20 @@ const TeamCard = () => {
 
                 <ul className="social-icons d-flex justify-content-center">
                   <li style={{ "--i": 1 }}>
-                    <a href="mailto:husain.fikri@gmail.com">
+                    <a href="mailto:husain.fikri@gmail.com" target="_blank">
                       <span className="fa fa-envelope"></span>
                     </a>
                   </li>
                   <li style={{ "--i": 2 }}>
-                    <a href="https://github.com/h-fikri">
+                    <a href="https://github.com/h-fikri" target="_blank">
                       <span className="fab fa-github"></span>
                     </a>
                   </li>
                   <li style={{ "--i": 3 }}>
-                    <a href="https://www.linkedin.com/in/husain-fikri-hidayah-0151158a/">
+                    <a
+                      href="https://www.linkedin.com/in/husain-fikri-hidayah-0151158a/"
+                      target="_blank"
+                    >
                       <span className="fab fa-linkedin"></span>
                     </a>
                   </li>
@@ -81,17 +86,20 @@ const TeamCard = () => {
 
                 <ul className="social-icons d-flex justify-content-center">
                   <li style={{ "--i": 1 }}>
-                    <a href="mailto:iancheng29012@gmail.com">
+                    <a href="mailto:iancheng29012@gmail.com" target="_blank">
                       <span className="fa fa-envelope"></span>
                     </a>
                   </li>
                   <li style={{ "--i": 2 }}>
-                    <a href="https://github.com/ian29012">
+                    <a href="https://github.com/ian29012" target="_blank">
                       <span className="fab fa-github"></span>
                     </a>
                   </li>
                   <li style={{ "--i": 3 }}>
-                    <a href="https://www.linkedin.com/in/iancheng2901">
+                    <a
+                      href="https://www.linkedin.com/in/iancheng2901"
+                      target="_blank"
+                    >
                       <span className="fab fa-linkedin"></span>
                     </a>
                   </li>
@@ -110,17 +118,20 @@ const TeamCard = () => {
 
                 <ul className="social-icons d-flex justify-content-center">
                   <li style={{ "--i": 1 }}>
-                    <a href="mailto:loretta.rehm@gmail.com">
+                    <a href="mailto:loretta.rehm@gmail.com" target="_blank">
                       <span className="fa fa-envelope"></span>
                     </a>
                   </li>
                   <li style={{ "--i": 2 }}>
-                    <a href="https://github.com/lorettarehm">
+                    <a href="https://github.com/lorettarehm" target="_blank">
                       <span className="fab fa-github"></span>
                     </a>
                   </li>
                   <li style={{ "--i": 3 }}>
-                    <a href="https://www.linkedin.com/in/lorettarehm">
+                    <a
+                      href="https://www.linkedin.com/in/lorettarehm"
+                      target="_blank"
+                    >
                       <span className="fab fa-linkedin"></span>
                     </a>
                   </li>
