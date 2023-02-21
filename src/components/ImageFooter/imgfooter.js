@@ -22,7 +22,6 @@ const ImageFooter = () => {
               method="POST"
               data-netlify="true"
               onSubmit="submit"
-              data-netlify-honeypot="bot-field"
             >
               <input type="hidden" name="form-name" value="contact" />
               <div className="form-group">
