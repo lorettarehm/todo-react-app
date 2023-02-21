@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./header.css";
 import geo from "./images/geo.png";
 import tall from "./images/tallest-v2.png";
 import map from "./images/map.png";
 
 function HeaderPart() {
+
   return (
     <><div>
       <div className="jumbotron">
@@ -18,6 +19,7 @@ function HeaderPart() {
           type="button"
           className="btn btn-outline-light button-jumbo"
           aria-label="Center Align"
+          // onClick={} - How to update the variable that displays the quiz?
         >
           <span
             className="fa-solid fa-play fa-2xl play"

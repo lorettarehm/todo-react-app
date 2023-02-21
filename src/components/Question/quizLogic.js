@@ -1,7 +1,6 @@
 import React, {useState} from "react";
 import "./quizStyle.css";
 import questionList from "./questionList";
-import { Link } from 'react-router-dom';
 
 import {
     Button,
@@ -80,7 +79,7 @@ function QuizLogic() {
             </div>
           : //Else it will render the correct answer for you when it's false
             <div className="displaytheanswer">
-              <Box sx={{ textAlign: 'center', m: '3vw', fontSize: '1.6rem'}}>
+              <Box sx={{ textAlign: 'center', m: '1vw', fontSize: '1.6rem'}}>
                 The correct answer is {anwers[0].answerText} 
               </Box>
               <Button variant="outlined" onClick={()=> handleCorrect("recorrect") }>
@@ -91,19 +90,21 @@ function QuizLogic() {
         </Card>
       :
         // rendering quiz results upon completion of all questions.
-        <Card elevation={12} sx={{ px: 'calc(2px + 1.5vw)', py: 'calc(2px + 1.5vw)' }} style={{display: 'inline-block' }}>
+        <Card elevation={12} sx={{ px: 'calc(2px + 1.5vw)', py: 'calc(2px + 1.5vw)' }} style={{display: 'inline-block'}}>
           <CardContent>
-            <Box sx={{ textAlign: 'center', fontSize: '1.6rem'}}>
-              Congratulations
+            <Box sx={{ textAlign: 'center', fontSize: '1.6rem', padding: '0.8rem'}}>
+              CONGRATULATIONS!
             </Box>
             <Box>
               Well done! You've completed the quiz game.
-              <br/>
+              <br/><br/>
               You have got {correctAnswers} correct answers.
             </Box>
           </CardContent>
-          <CardActions>
-            <Link>Try another quiz!</Link>
+          <CardActions style={{justifyContent: 'center'}}>
+            <Button variant="outlined" onClick={localStorage.setItem("renderQuiz", false)}>
+                Try another quiz!
+            </Button>
           </CardActions>
         </Card>
       }
