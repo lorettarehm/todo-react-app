@@ -6,61 +6,72 @@
   --gradient-right-globe: #07498b;
 }
 
+.cardQuestion {
+  font-size: 3vw;
+}
+
 /* Material UI style overrides */
 .MuiButton-root {
   cursor: pointer;
   display: inline-block;
-  height: 3rem !important;
-  padding: 0 2rem;
-  margin: 0 5vh !important;
+  height: 5vw !important;
+  padding: 0 1vw;
+  margin: 0 0.5vw !important;
   color: white !important;
-  border:2px solid transparent !important;
-  border-radius:10px !important;
+  border:0.5vw solid transparent !important;
+  border-radius:2vw !important;
+  border-right-color:var(--gradient-right) !important;
+  border-left-color:var(--gradient-left) !important;
+  background:
+    linear-gradient(to left,
+      var(--gradient-right) 0%, var(--gradient-left) 70% ,
+      /* transparent 70%,  transparent 85%,  */
+      var(--gradient-left) 85%, var(--gradient-left) 100%) top/100% 0.5vw,
+    linear-gradient(to left, var(--gradient-right) 0%, var(--gradient-left) 100%); 
+    /* bottom/100% 0.5vw; */
+  background-repeat:no-repeat;
+}
+  
+.MuiCard-root {
+    font-size: 1vw !important;
+    background-color: transparent !important;
+    color: #fff !important;
+    padding: 4vw !important;
+    margin: 0 2vw !important;
+    border: 2vw solid transparent !important;
+    border-radius: 10vw !important;
+    border-right-color:var(--gradient-right-globe) !important;
+    border-left-color:var(--gradient-left-globe) !important;
+    background:
+      linear-gradient(to left,
+        var(--gradient-right-globe) 0%, var(--gradient-right-globe) 50% ,
+        var(--gradient-right-globe) 50%, var(--gradient-left-globe) 100%) top/100% 2.4vw,
+      linear-gradient(to left,
+        var(--gradient-right-globe) 0%, var(--gradient-left-globe) 50% ,
+        var(--gradient-left-globe) 50%, var(--gradient-left-globe) 100%) bottom/100% 2.4vw;
+    background-repeat:no-repeat;
+    backdrop-filter: grayscale(30%);
+  }
+
+.MuiChip-label {
+  color: #fff !important;
+  font-size: 1vw !important;
+}
+
+.MuiGrid-root {
+  font-size: 2vw !important;
+}
+
+.MuiChip-root {
+  border:0.2vw solid transparent !important;
+  border-radius:0.8vw !important;
   border-right-color:var(--gradient-right) !important;
   border-left-color:var(--gradient-left) !important;
   background:
     linear-gradient(to left,
       var(--gradient-right) 0%, var(--gradient-left) 70% ,
       transparent 70%,  transparent 85%, 
-      var(--gradient-left) 85%, var(--gradient-left) 100%) top/100% 2px,
-    linear-gradient(to left, var(--gradient-right) 0%, var(--gradient-left) 100%) bottom/100% 2px;
+      var(--gradient-left) 85%, var(--gradient-left) 100%) top/100% 0.2vw,
+    linear-gradient(to left, var(--gradient-right) 0%, var(--gradient-left) 100%) bottom/100% 0.2vw;
   background-repeat:no-repeat;
 }
-  
-.MuiCard-root {
-    background-color: transparent !important;
-    color: #fff !important;
-    padding: 10vh !important;
-    margin: 0 2vh !important;
-    border: 2.5vh solid transparent !important;
-    border-radius: 10vh !important;
-    border-right-color:var(--gradient-right-globe) !important;
-    border-left-color:var(--gradient-left-globe) !important;
-    background:
-      linear-gradient(to left,
-        var(--gradient-right-globe) 0%, var(--gradient-right-globe) 50% ,
-        var(--gradient-right-globe) 50%, var(--gradient-left-globe) 100%) top/100% 2.5vh,
-      linear-gradient(to left,
-        var(--gradient-right-globe) 0%, var(--gradient-left-globe) 50% ,
-        var(--gradient-left-globe) 50%, var(--gradient-left-globe) 100%) bottom/100% 2.5vh;
-    background-repeat:no-repeat;
-    box-shadow: inset var(#fff) 1vh !important;
-  }
-
-  .MuiChip-label {
-    color: #fff !important;
-  }
-
-  .MuiChip-root {
-    border:2px solid transparent !important;
-    border-radius:10px !important;
-    border-right-color:var(--gradient-right) !important;
-    border-left-color:var(--gradient-left) !important;
-    background:
-      linear-gradient(to left,
-        var(--gradient-right) 0%, var(--gradient-left) 70% ,
-        transparent 70%,  transparent 85%, 
-        var(--gradient-left) 85%, var(--gradient-left) 100%) top/100% 2px,
-      linear-gradient(to left, var(--gradient-right) 0%, var(--gradient-left) 100%) bottom/100% 2px;
-    background-repeat:no-repeat;
-  }
