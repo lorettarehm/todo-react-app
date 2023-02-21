@@ -47,11 +47,11 @@
     box-shadow: inset var(#fff) 1vh !important;
   }
 
-  .css-6od3lo-MuiChip-label {
+  .MuiChip-label {
     color: #fff !important;
   }
 
-  .css-1012bww-MuiChip-root{
+  .MuiChip-root {
     border:2px solid transparent !important;
     border-radius:10px !important;
     border-right-color:var(--gradient-right) !important;
