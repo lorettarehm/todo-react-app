@@ -22,11 +22,11 @@ const ImageFooter = () => {
               method="POST"
               data-netlify="true"
               onSubmit="submit"
-              data-netlify-honeypot="bot-field"
             >
               <input type="hidden" name="form-name" value="contact" />
               <div className="form-group">
                 <input
+                  name="name"
                   type="text"
                   className="form-control form-control-sm rounded-6 transparentinput"
                   id="InputName"
@@ -35,6 +35,7 @@ const ImageFooter = () => {
               </div>
               <div className="form-group">
                 <input
+                  name="email"
                   type="email"
                   className="form-control form-control-sm rounded-6 transparentinput"
                   id="InputEmail"
