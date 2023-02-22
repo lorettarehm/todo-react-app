@@ -6,21 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body>
-    <div className="ImageFooter">
-      <form
-        name="contact"
-        action="/contact"
-        method="POST"
-        data-netlify="true"
-        netlify
-        netlify-honeypot="bot-field"
-      >
-        <input type="hidden" name="form-name" value="contact" />
-        <input required type="text" name="name" placeholder="Name" />
-        <input required type="email" name="email" placeholder="Email" />
-        <button type="submit">Submit</button>
-      </form>
-    </div>
+  <div className="ImageFooter">
+    <form
+      name="contact"
+      action="/.netlify/functions/submission"
+      method="POST"
+      data-netlify="true"
+      netlify
+      netlify-honeypot="bot-field"
+    >
+      <input type="hidden" name="form-name" value="contact" />
+      <input required type="text" name="name" placeholder="Name" />
+      <input required type="email" name="email" placeholder="Email" />
+      <button type="submit">Submit</button>
+    </form>
+  </div>
   </body>
 </html>
