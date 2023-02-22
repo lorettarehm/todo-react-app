@@ -12,11 +12,11 @@ const TeamCard = () => {
       <div className="container">
         <div className="row">
           <div className="col-lg-3 col-md-6 col-sm-12 mt-2 mb-2 d-flex justify-content-center">
-            <div className="card p-0">
-              <div className="card-image">
+            <div className="teamcard p-0">
+              <div className="teamcard-image">
                 <img src={AT_image} alt="" />
               </div>
-              <div className="card-content d-flex flex-column align-items-center">
+              <div className="teamcard-content d-flex flex-column align-items-center">
                 <h4 className="pt-2">Alina Tudor</h4>
                 <h5>Developer</h5>
 
@@ -44,11 +44,11 @@ const TeamCard = () => {
             </div>
           </div>
           <div className="col-lg-3 col-md-6 col-sm-12 mt-2 mb-2 d-flex justify-content-center">
-            <div className="card p-0">
-              <div className="card-image">
+            <div className="teamcard p-0">
+              <div className="teamcard-image">
                 <img src={HH_image} alt="" />
               </div>
-              <div className="card-content d-flex flex-column align-items-center">
+              <div className="teamcard-content d-flex flex-column align-items-center">
                 <h4 className="pt-2">Husain Hidayah</h4>
                 <h5>Developer</h5>
 
@@ -76,11 +76,11 @@ const TeamCard = () => {
             </div>
           </div>
           <div className="col-lg-3 col-md-6 col-sm-12 mt-2 mb-2 d-flex justify-content-center">
-            <div className="card p-0">
-              <div className="card-image">
+            <div className="teamcard p-0">
+              <div className="teamcard-image">
                 <img src={IC_image} alt="" />
               </div>
-              <div className="card-content d-flex flex-column align-items-center">
+              <div className="teamcard-content d-flex flex-column align-items-center">
                 <h4 className="pt-2">Ian Cheng</h4>
                 <h5>Developer</h5>
 
@@ -108,11 +108,11 @@ const TeamCard = () => {
             </div>
           </div>
           <div className="col-lg-3 col-md-6 col-sm-12 mt-2 mb-2 d-flex justify-content-center">
-            <div className="card p-0">
-              <div className="card-image">
+            <div className="teamcard p-0">
+              <div className="teamcard-image">
                 <img src={LR_image} alt="" />
               </div>
-              <div className="card-content d-flex flex-column align-items-center">
+              <div className="teamcard-content d-flex flex-column align-items-center">
                 <h4 className="pt-2">Loretta Rehm</h4>
                 <h5>Developer</h5>
 
