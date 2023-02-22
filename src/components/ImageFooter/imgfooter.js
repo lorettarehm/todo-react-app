@@ -9,7 +9,14 @@ import "./style.css";
 function ImageFooter() {
   return (
     <div className="ImageFooter">
-      <form name="contact" action="/contact" method="POST" data-netlify="true">
+      <form
+        name="contact"
+        action="/contact"
+        method="POST"
+        data-netlify="true"
+        netlify
+        netlify-honeypot="bot-field"
+      >
         <input type="hidden" name="form-name" value="contact" />
         <input required type="text" name="name" placeholder="Name" />
         <input required type="email" name="email" placeholder="Email" />
