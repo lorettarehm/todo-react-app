@@ -26,22 +26,19 @@ function QuizLogic() {
       if (currentQues === questionList.length - 1) {
           setcurrentQues(questionList.length - 1)
           setLoopQuiz(false)
-          console.log("IF 1")
+          if (correct) {setcorrectAnswers(count => count + 1)}
           // next question when you know the correct answer
       } else if (correct === "recorrect") {
           setcurrentQues(count => count + 1)
           settrueFalse(true)
-          console.log("IF 2 - BUTTON OK TO RECORRECT")
           // next question when you correct
       } else if (correct) {
           setcorrectAnswers(count => count + 1)
           setcurrentQues(count => count + 1)
           settrueFalse(true)
-          console.log("IF 3 - CORRECT ANSWER")
           // show the answer for you when you false
       } else {
           settrueFalse(false)
-          console.log("ELSE - WRONG ANSWER")
       }
   }
 
@@ -107,7 +104,7 @@ function QuizLogic() {
             </Box>
           </CardContent>
           <CardActions style={{justifyContent: 'center'}}>
-            <Button variant="outlined" onClick={localStorage.setItem("renderQuiz", false)}>
+            <Button variant="outlined" onClick={() => window.location.reload(false)}>
                 Try another quiz!
             </Button>
           </CardActions>
