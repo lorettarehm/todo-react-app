@@ -22,8 +22,8 @@ function QuizLogic() {
   // find the correct anwers
   const anwers = questionList[currentQues].answerOptions.filter((correct) => correct.rightChoice === true)
   const handleCorrect = (correct) => { // turn to congratulate page when you finish
-      if (currentQues === questionList.length - 2) {
-          setcurrentQues(questionList.length - 2)
+      if (currentQues === questionList.length - 1) {
+          setcurrentQues(questionList.length - 1)
 
           // next question when you know the correct answer
       } else if (correct === "recorrect") {
