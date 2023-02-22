@@ -43,7 +43,7 @@ const ImageFooter = () => {
               onSubmit={handleFormSubmit}
             >
               {({ isSubmitting }) => (
-                <Form name="contact">
+                <Form name="contact" id="contact-form">
                   <input type="hidden" name="form-name" value="contact" />
                   <div className="form-group">
                     <Field
