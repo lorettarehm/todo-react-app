@@ -17,12 +17,7 @@ const ImageFooter = () => {
         <div className="newsform col-md-6 d-flex justify-content-end">
           <div className="subform ">
             <h5>Subscribe to our Newsletter:</h5>
-            <form
-              name="contact"
-              method="POST"
-              data-netlify="true"
-              onSubmit="submit"
-            >
+            <form name="contact" method="POST" id="contact-form" data-netlify="true" onSubmit="submit">
               <input type="hidden" name="form-name" value="contact" />
               <div className="form-group">
                 <input
