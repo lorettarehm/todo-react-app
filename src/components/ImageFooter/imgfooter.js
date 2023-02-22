@@ -1,5 +1,7 @@
 import React from "react";
-import { NetlifyForm, Honeypot } from "react-netlify-forms";
+
+import { NetlifyForm } from "react-netlify-forms";
+
 import "./style.css";
 
 // const validationSchema = Yup.object().shape({
@@ -8,10 +10,9 @@ import "./style.css";
 // });
 
 const ImageFooter = () => (
-  <NetlifyForm name="Contact" action="/thanks" honeypotName="bot-field">
+  <NetlifyForm name="Contact" action="/thanks">
     {({ handleChange, success, error }) => (
       <>
-        <Honeypot />
         {success && <p>Thanks for contacting us!</p>}
         {error && (
           <p>Sorry, we could not reach our servers. Please try again later.</p>
