@@ -1,4 +1,39 @@
 .logofab4 > img {
-  width: 200px;
+  width: 10%;
+  padding-bottom: 2%;
   height: auto;
+}
+
+.followus i {
+  color: white;
+}
+
+.aboutus {
+  padding-left: 3%;
+}
+
+@media only screen and (max-width: 900px) {
+  .aboutus {
+    padding-left: 8.5%;
+    padding-top: 0%;
+  }
+
+  .text-left {
+    text-align: center !important;
+  }
+
+  .logofab4 img {
+    width: 20%;
+    padding: 5% 0 2% 0;
+  }
+
+  .followus {
+    padding-top: 5%;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .aboutus {
+      padding-top: 0;
+    }
+  }
 }

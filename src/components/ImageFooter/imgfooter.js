@@ -75,7 +75,7 @@ const ImageFooter = () => {
                   </div>
                   <button
                     type="submit"
-                    className="btnsbmt btn btn-primary btn-block btn-sm rounded-6"
+                    className="btnsbmt btn btn-light btn-block btn-sm rounded-6"
                     disabled={isSubmitting}
                   >
                     {isSubmitting ? "Submitting..." : "Subscribe"}

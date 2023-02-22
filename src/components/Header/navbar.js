@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logo from "./images/logo.png";
+import logo from "./images/logo-v3.png";
 import "./navbar.css";
 
 const TopNav = (props) => {

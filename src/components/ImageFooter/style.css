@@ -47,3 +47,18 @@
   border-bottom: 1px solid white;
   color: white;
 }
+
+@media only screen and (max-width: 900px) {
+  .subcopy {
+    padding-top: 0%;
+  }
+  .newsform {
+    padding-top: 10%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .subcopy {
+    padding-top: 35%;
+  }
+}

@@ -77,7 +77,7 @@ function HeaderPart() {
                         Quiz! From continents and countries to capital cities
                         and natural wonders, this quiz covers a range of topics
                         to challenge even the most seasoned travelers and
-                        explorers.{" "}
+                        explorers.
                       </p>
                       <button
                         type="button"
@@ -108,12 +108,11 @@ function HeaderPart() {
                         alt="Tall skyscraper"
                       />
                       <p className="card-text">
-                        the tallest mountain on each continent, as well as some
-                        of the most famous peaks around the world. Whether
-                        you're an avid hiker, a geography buff, or simply
-                        interested in learning more about the world's natural
-                        wonders, a "which is the tallest" quiz can be a great
-                        way to expand your knowledge and test your skills.
+                        The tallest mountain on each continent or some of the
+                        most famous peaks around the world. Interested in
+                        learning more about the world's natural wonders? This
+                        quiz can be a great way to expand your knowledge and
+                        test your skills.
                       </p>
                       <a
                         href="/#"
@@ -149,8 +148,7 @@ function HeaderPart() {
                         knowledge of geography. Whether you're a student, a
                         traveler, or simply interested in geography, a map quiz
                         can be a great way to improve your knowledge and have
-                        some fun at the same time. way to improve your knowledge
-                        and have some fun at the same time.
+                        some fun at the same time.
                       </p>
                       <a
                         href="/#"
@@ -165,6 +163,21 @@ function HeaderPart() {
                 </div>
               </div>
             </div>
+          </div>
+
+          <div className="about-team">
+            <h2 id="more-link">The Team</h2>
+            <p>
+              Explore Quizzes is a great way to test your knowledge of
+              geography, maps, and the world's highest points. With these
+              quizzes, you can challenge yourself to identify countries and
+              their capitals, locate cities on a map, and even pinpoint the
+              highest peaks on each continent. Whether you are a geography
+              enthusiast or just looking to brush up on your knowledge, these
+              quizzes are a fun and interactive way to explore the world and
+              learn something new. So why not give them a try and see how much
+              you really know about our amazing planet?
+            </p>
           </div>
         </div>
       )}
