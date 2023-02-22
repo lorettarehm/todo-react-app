@@ -18,32 +18,37 @@ function QuizLogic() {
   let [currentQues, setcurrentQues] = useState(0)
   let [correctAnswers, setcorrectAnswers] = useState(0)
   let [trueFalse, settrueFalse] = useState(true)
+  let [loopQuiz, setLoopQuiz] = useState(true)
 
   // find the correct anwers
   const anwers = questionList[currentQues].answerOptions.filter((correct) => correct.rightChoice === true)
   const handleCorrect = (correct) => { // turn to congratulate page when you finish
       if (currentQues === questionList.length - 1) {
           setcurrentQues(questionList.length - 1)
-
+          setLoopQuiz(false)
+          console.log("IF 1")
           // next question when you know the correct answer
       } else if (correct === "recorrect") {
           setcurrentQues(count => count + 1)
           settrueFalse(true)
-
+          console.log("IF 2 - BUTTON OK TO RECORRECT")
           // next question when you correct
       } else if (correct) {
           setcorrectAnswers(count => count + 1)
           setcurrentQues(count => count + 1)
           settrueFalse(true)
+          console.log("IF 3 - CORRECT ANSWER")
           // show the answer for you when you false
       } else {
           settrueFalse(false)
+          console.log("ELSE - WRONG ANSWER")
       }
   }
 
   return (
     <div className="quiz-body"> {/* conditional rendering for finish all question */}
-      {currentQues !== questionList.length-1 ?
+      {loopQuiz ?
+      // {currentQues !== questionList.length ?
         // rendering remaining questions if unanswered.
         <Card elevation={12} sx={{ px: 'calc(2px + 1.5vw)', py: 'calc(2px + 1.5vw)' }} style={{display: 'inline-block' }}>
           {/* Question Title */}
