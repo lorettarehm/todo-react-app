@@ -1,5 +1,7 @@
 import React from "react";
+
 import { NetlifyForm } from "react-netlify-forms";
+
 import "./style.css";
 
 // const validationSchema = Yup.object().shape({
@@ -120,3 +122,4 @@ const ImageFooter = () => (
 // };
 
 export default ImageFooter;
+
