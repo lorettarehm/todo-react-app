@@ -22,8 +22,8 @@ function QuizLogic() {
   // find the correct anwers
   const anwers = questionList[currentQues].answerOptions.filter((correct) => correct.rightChoice === true)
   const handleCorrect = (correct) => { // turn to congratulate page when you finish
-      if (currentQues === questionList.length - 1) {
-          setcurrentQues(questionList.length - 1)
+      if (currentQues === questionList.length - 2) {
+          setcurrentQues(questionList.length - 2)
 
           // next question when you know the correct answer
       } else if (correct === "recorrect") {
@@ -49,11 +49,11 @@ function QuizLogic() {
           {/* Question Title */}
           <CardContent className="question-text">
             <Box sx={{ flexGrow: 1 }}>
-              <Grid container spacing={2}>
-                  <Grid item xs={9}>
-                    <Box sx={{ textAlign: 'left', m: '1vw' }}>Question {currentQues+1} / {questionList.length}</Box>
+            <Grid container spacing={1}>
+                  <Grid item xs={7}>
+                    <Box sx={{ textAlign: 'left', m: '0.2vw' }}>Question {currentQues+1} / {questionList.length}</Box>
                   </Grid>
-                  <Grid item xs={3}>
+                  <Grid item xs={5}>
                     {/* How many correct answer */}
                     <Badge badgeContent={correctAnswers} color="success" showZero>
                       <Chip label="Correct answer(s)" variant="outlined"/>
@@ -61,7 +61,7 @@ function QuizLogic() {
                   </Grid>
               </Grid>
             </Box>
-            <Box sx={{ textAlign: 'justify', m: '1vw', fontSize: '1.6rem'}}>
+            <Box className="cardQuestion" sx={{ textAlign: 'justify', m: '1vw', fontSize: '1.6rem'}}>
               {questionList[currentQues].questionText}  
             </Box>
           </CardContent>
