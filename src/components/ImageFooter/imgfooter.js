@@ -121,3 +121,4 @@ const ImageFooter = () => (
 // };
 
 export default ImageFooter;
+
