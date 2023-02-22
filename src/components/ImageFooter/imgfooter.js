@@ -31,6 +31,7 @@ export class ImageFooter extends Component {
                     as soon as possible.
                   </p>
                   <Form
+                    className="contact-form"
                     action="/success"
                     name="react-playground-contact-form"
                     method="POST"
