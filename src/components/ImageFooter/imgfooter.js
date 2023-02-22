@@ -1,7 +1,4 @@
 import React from "react";
-
-import { NetlifyForm } from "react-netlify-forms";
-
 import "./style.css";
 
 // const validationSchema = Yup.object().shape({
@@ -9,35 +6,18 @@ import "./style.css";
 //   email: Yup.string().email("Invalid email").required("Email is required"),
 // });
 
-const ImageFooter = () => (
-  <NetlifyForm name="Contact" action="/thanks">
-    {({ handleChange, success, error }) => (
-      <>
-        {success && <p>Thanks for contacting us!</p>}
-        {error && (
-          <p>Sorry, we could not reach our servers. Please try again later.</p>
-        )}
-        <div>
-          <label htmlFor="name">Name:</label>
-          <input type="text" name="name" id="name" onChange={handleChange} />
-        </div>
-        <div>
-          <label htmlFor="message">Message:</label>
-          <textarea
-            type="text"
-            name="message"
-            id="message"
-            rows="4"
-            onChange={handleChange}
-          />
-        </div>
-        <div>
-          <button type="submit">Submit</button>
-        </div>
-      </>
-    )}
-  </NetlifyForm>
-);
+function ImageFooter() {
+  return (
+    <div className="ImageFooter">
+      <form name="contact" action="/contact" method="POST" data-netlify="true">
+        <input type="hidden" name="form-name" value="contact" />
+        <input required type="text" name="name" placeholder="Name" />
+        <input required type="email" name="email" placeholder="Email" />
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  );
+}
 
 // {
 //   const handleFormSubmit = (values, { setSubmitting }) => {
@@ -122,4 +102,3 @@ const ImageFooter = () => (
 // };
 
 export default ImageFooter;
-
