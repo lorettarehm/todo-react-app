@@ -47,67 +47,71 @@ function QuizLogic() {
       {loopQuiz ?
       // {currentQues !== questionList.length ?
         // rendering remaining questions if unanswered.
-        <Card elevation={12} sx={{ px: 'calc(2px + 1.5vw)', py: 'calc(2px + 1.5vw)' }} style={{display: 'inline-block' }}>
+        <Card elevation={12} sx={{ px: 'calc(2px + 1.5vw)', py: 'calc(2px + 1.5vw)' }}>
           {/* Question Title */}
           <CardContent className="question-text">
-            <Box sx={{ flexGrow: 1 }}>
-            <Grid container spacing={1}>
-                  <Grid item xs={7}>
-                    <Box sx={{ textAlign: 'left', m: '0.2vw' }}>Question {currentQues+1} / {questionList.length}</Box>
-                  </Grid>
-                  <Grid item xs={5}>
-                    {/* How many correct answer */}
-                    <Badge badgeContent={correctAnswers} color="success" showZero>
-                      <Chip label="Correct answer(s)" variant="outlined"/>
-                    </Badge>
-                  </Grid>
+            {/* <Box sx={{ flexGrow: 1 }}> */}
+              <Grid container spacing={1} rowSpacing={1} direction="row" justifyContent="center" alignItems="stretch">
+                <Grid item xs={1}></Grid> {/* Offset column */}
+                <Grid item xs={6}>
+                  <Box sx={{ textAlign: 'left'}}>Question {currentQues+1} / {questionList.length}</Box>
+                </Grid>
+                <Grid item xs={4} sx={{ textAlign: 'right', margin: 'calc(2vh +2vw)'}}>
+                  {/* How many correct answer */}
+                  <Badge badgeContent={correctAnswers} color="success" showZero>
+                    <Chip label="Correct" variant="outlined"/>
+                  </Badge>
+                </Grid>
+                <Grid item xs={1}></Grid> {/* Offset column */}
+                <Grid item xs={12}>
+                  <Box className="cardQuestion">
+                    {questionList[currentQues].questionText}  
+                  </Box>
+                </Grid>
+                <Grid item xs={12}>
+                  {/* conditional rendering for true or false answers */}
+                  { trueFalse ? 
+                    <Box className="options-section">
+                      {/* render each Answer Option when you true */}
+                      {questionList[currentQues].answerOptions.map((answerOptions) => (
+                                                
+                      // it will passing the true / false argument when you click the button
+                      <Button variant="outlined" key={answerOptions.answerText} onClick={()=> handleCorrect(answerOptions.rightChoice)} sx={{ border: 0 }}>
+                        {answerOptions.answerText}
+                      </Button>
+                      ))}
+                    </Box>
+                  : //Else it will render the correct answer for you when it's false
+                    <Box className="displaytheanswer">
+                      <Box sx={{ textAlign: 'center'}}>
+                        The correct answer is {anwers[0].answerText} 
+                      </Box>
+                      <Button variant="outlined" onClick={()=> handleCorrect("recorrect") }>
+                        Ok!
+                      </Button>
+                    </Box>
+                  }
+                </Grid>
               </Grid>
-            </Box>
-            <Box className="cardQuestion" sx={{ textAlign: 'justify', m: '1vw', fontSize: '1.6rem'}}>
-              {questionList[currentQues].questionText}  
-            </Box>
+            {/* </Box> */}
           </CardContent>
-          {/* conditional rendering for true or false answers */}
-          { trueFalse ? 
-            <div className="options-section">
-              {/* render each Answer Option when you true */}
-              {questionList[currentQues].answerOptions.map((answerOptions) => (
-                                        
-              // it will passing the true / false argument when you click the button
-              <Button variant="outlined" key={answerOptions.answerText} onClick={()=> handleCorrect(answerOptions.rightChoice)} sx={{ border: 0 }}>
-                {answerOptions.answerText}
-              </Button>
-              ))}
-            </div>
-          : //Else it will render the correct answer for you when it's false
-            <div className="displaytheanswer">
-              <Box sx={{ textAlign: 'center', m: '1vw', fontSize: '1.6rem'}}>
-                The correct answer is {anwers[0].answerText} 
-              </Box>
-              <Button variant="outlined" onClick={()=> handleCorrect("recorrect") }>
-                Ok!
-              </Button>
-            </div>
-          }
         </Card>
       :
         // rendering quiz results upon completion of all questions.
-        <Card elevation={12} sx={{ px: 'calc(2px + 1.5vw)', py: 'calc(2px + 1.5vw)' }} style={{display: 'inline-block'}}>
+        <Card elevation={12} sx={{ px: 'calc(2px + 1.5vw)', py: 'calc(2px + 1.5vw)' }}>
           <CardContent>
-            <Box sx={{ textAlign: 'center', fontSize: '1.6rem', padding: '0.8rem'}}>
+            <Box className="congrats" sx={{ m: 'calc(2vh + 2vw)'}}>
               CONGRATULATIONS!
             </Box>
-            <Box>
+            <Box className="congratsText" sx={{ m: 'calc(2vh + 2vw)'}}>
               Well done! You've completed the quiz game.
               <br/><br/>
               You have got {correctAnswers} correct answers.
             </Box>
-          </CardContent>
-          <CardActions style={{justifyContent: 'center'}}>
-            <Button variant="outlined" onClick={() => window.location.reload(false)}>
+            <Button variant="outlined" sx={{ m: 'calc(2vh + 2vw)'}} onClick={() => window.location.reload(false)}>
                 Try another quiz!
             </Button>
-          </CardActions>
+          </CardContent>
         </Card>
       }
     </div>
