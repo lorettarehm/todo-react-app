@@ -6,8 +6,8 @@ function ImageFooter() {
     <div className="imgfooter bg-image text-light d-flex align-items-center">
       <div className="row">
         <div className="subcopy col-md-6">
-          <h5 className="">Newsletter Subscription</h5>
-          <p className="">
+          <h5>Newsletter Subscription</h5>
+          <p>
             Subscribe to our educational quiz website and stay up-to-date with
             the latest geography quizzes and interactive content. Test your
             knowledge and learn about the world around us! We promise not to
