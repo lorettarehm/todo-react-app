@@ -3,36 +3,63 @@ import "./style.css";
 
 function ImageFooter() {
   return (
-    <div className="ImageFooter text-light">
-      <form
-        name="contact v3"
-        method="post"
-        data-netlify="true"
-        onSubmit="submit"
-        netlify-honeypot="bot-field"
-        netlify
-      >
-        <input type="hidden" name="form-name" value="contact v3" />
-
-        <div hidden>
-          <input name="bot-field" />
+    <div className="imgfooter bg-image text-light d-flex align-items-center">
+      <div className="row">
+        <div className="subcopy col-md-6">
+          <h5 className="">Newsletter Subscription</h5>
+          <p className="">
+            Subscribe to our educational quiz website and stay up-to-date with
+            the latest geography quizzes and interactive content. Test your
+            knowledge and learn about the world around us! We promise not to
+            spam you or share your information with anyone.
+          </p>
         </div>
+        <div className="newsform col-md-6 d-flex justify-content-end">
+          <div className="subform ">
+            <h5>Subscribe to our Newsletter:</h5>
+            <form
+              name="contact v3"
+              method="post"
+              data-netlify="true"
+              onSubmit="submit"
+              netlify-honeypot="bot-field"
+              netlify
+            >
+              <input type="hidden" name="form-name" value="contact v3" />
 
-        <div>
-          <label>
-            Name
-            <br />
-            <input type="text" name="first-name" />
-          </label>
-        </div>
+              <div hidden>
+                <input name="bot-field" />
+              </div>
 
-        <div>
-          <label htmlFor="email">Email</label>
-          <br />
-          <input id="email" type="email" name="email" />
+              <div className="form-group">
+                <input
+                  type="text"
+                  name="name"
+                  className="form-control form-control-sm rounded-6 transparentinput"
+                  id="InputName"
+                  placeholder="Name"
+                />
+              </div>
+
+              <div className="form-group">
+                <input
+                  type="email"
+                  name="email"
+                  className="form-control form-control-sm rounded-6 transparentinput"
+                  id="InputEmail"
+                  placeholder="Email"
+                />
+              </div>
+              <button
+                type="submit"
+                className="btnsbmt btn btn-light btn-block btn-sm rounded-6"
+              >
+                Subscribe
+              </button>
+            </form>
+          </div>
         </div>
-        <button type="submit">Submit The Results</button>
-      </form>
+      </div>
     </div>
   );
 }
