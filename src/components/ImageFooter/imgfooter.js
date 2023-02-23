@@ -1,114 +1,47 @@
-// import React from "react";
+import React from "react";
 import "./style.css";
+
+function ImageFooter() {
+  return (
+    <div className="ImageFooter text-light">
+      <form
+        name="contact v3"
+        method="post"
+        data-netlify="true"
+        onSubmit="submit"
+        netlify-honeypot="bot-field"
+        netlify
+      >
+        <input type="hidden" name="form-name" value="contact v3" />
+
+        <div hidden>
+          <input name="bot-field" />
+        </div>
+
+        <div>
+          <label>
+            Name
+            <br />
+            <input type="text" name="first-name" />
+          </label>
+        </div>
+
+        <div>
+          <label htmlFor="email">Email</label>
+          <br />
+          <input id="email" type="email" name="email" />
+        </div>
+        <button type="submit">Submit The Results</button>
+      </form>
+    </div>
+  );
+}
+export default ImageFooter;
 
 // const validationSchema = Yup.object().shape({
 //   name: Yup.string().required("Name is required"),
 //   email: Yup.string().email("Invalid email").required("Email is required"),
 // });
-
-import React, { Component, Fragment } from "react";
-import { Container, Row, Col, Form, Button } from "react-bootstrap";
-import { Helmet } from "react-helmet";
-
-export class ImageFooter extends Component {
-  render() {
-    return (
-      <Fragment>
-        <div>
-          <Helmet>
-            <title>React Playground | Contact</title>
-          </Helmet>
-          <Container>
-            <Row>
-              <Col md={3}></Col>
-              <Col md={6}>
-                <h3>Contact Form</h3>
-                <hr />
-                <div className="content">
-                  <p>
-                    Feel free to contact us with any questions. Submit your
-                    name, email, and a short message, and we'll get back to you
-                    as soon as possible.
-                  </p>
-                  <Form
-                    className="contact-form"
-                    action="/success"
-                    name="react-playground-contact-form"
-                    method="POST"
-                    data-netlify="true"
-                  >
-                    <input
-                      type="hidden"
-                      name="form-name"
-                      value="react-playground-contact-form"
-                    />
-                    <Form.Group>
-                      <Form.Label>Name</Form.Label>
-                      <Form.Control
-                        type="name"
-                        name="name"
-                        placeholder="Name"
-                      />
-                    </Form.Group>
-                    <Form.Group controlId="formBasicEmail">
-                      <Form.Label>Email Address</Form.Label>
-                      <Form.Control
-                        type="email"
-                        name="email"
-                        placeholder="email@example.com"
-                      />
-                      <Form.Text className="text-muted">
-                        We'll never share your email with anyone else.
-                      </Form.Text>
-                    </Form.Group>
-                    <Form.Group controlId="exampleForm.ControlTextarea1">
-                      <Form.Label>Message</Form.Label>
-                      <Form.Control as="textarea" name="message" rows="5" />
-                    </Form.Group>
-                    <div className="field">
-                      <div data-netlify-recaptcha="true"></div>
-                    </div>
-                    <Button
-                      className="actions"
-                      variant="primary"
-                      type="submit"
-                      value="Send Message"
-                      id="submit-btn"
-                    >
-                      Send Message
-                    </Button>
-                  </Form>
-                  <br />
-                </div>
-              </Col>
-              <Col md={3}></Col>
-            </Row>
-          </Container>
-        </div>
-      </Fragment>
-    );
-  }
-}
-
-// function ImageFooter() {
-//   return (
-//     <div className="ImageFooter">
-//       <form
-//         name="contact"
-//         action="/.netlify/functions/submission"
-//         method="POST"
-//         data-netlify="true"
-//         netlify
-//         netlify-honeypot="bot-field"
-//       >
-//         <input type="hidden" name="form-name" value="contact" />
-//         <input required type="text" name="name" placeholder="Name" />
-//         <input required type="email" name="email" placeholder="Email" />
-//         <button type="submit">Submit</button>
-//       </form>
-//     </div>
-//   );
-// }
 
 // {
 //   const handleFormSubmit = (values, { setSubmitting }) => {
@@ -191,5 +124,3 @@ export class ImageFooter extends Component {
 //     </div>
 //   );
 // };
-
-export default ImageFooter;

@@ -7,5 +7,36 @@
   </head>
   <body>
     <div id="root"></div>
+    <div id="netlifyform" style="display: none">
+      <form
+        name="contact v3"
+        method="post"
+        data-netlify="true"
+        onSubmit="submit"
+        netlify-honeypot="bot-field"
+        netlify
+      >
+        <input type="hidden" name="form-name" value="contact v3" />
+
+        <div hidden>
+          <input name="bot-field" />
+        </div>
+
+        <div>
+          <label>
+            Name
+            <br />
+            <input type="text" name="first-name" />
+          </label>
+        </div>
+
+        <div>
+          <label htmlFor="email">Email</label>
+          <br />
+          <input id="email" type="email" name="email" />
+        </div>
+        <button type="submit">Submit The Results</button>
+      </form>
+    </div>
   </body>
 </html>
