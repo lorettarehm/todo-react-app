@@ -1,10 +1,10 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./style.css";
-import AT_image from "./images/AT.jfif";
-import HH_image from "./images/HH.jpg";
-import IC_image from "./images/IC.jfif";
-import LR_image from "./images/LR.jpg";
+import AT_image from "./images/AVATAR_AT.jpg";
+import HH_image from "./images/AVATAR_HH.jpg";
+import IC_image from "./images/AVATAR_IC.jpg";
+import LR_image from "./images/AVATAR_LR.jpg";
 
 const TeamCard = () => {
   return (

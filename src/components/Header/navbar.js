@@ -27,7 +27,7 @@ const TopNav = (props) => {
         className={`${isNavCollapsed ? "collapse" : ""} navbar-collapse`}
         id="navbarsExample09"
       >
-        <a className="nav-link active" aria-current="page" href="/app.js">
+        <a className="nav-link active" aria-current="page" href="/app.js" onClick={() => window.location.reload(false)}>
           Home
         </a>
         <a className="nav-link" href="/#about-us">
