@@ -1,10 +1,11 @@
 import React from "react";
 import "./style.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
+import logo from "./images/logo-v3.png";
 
 function Footer() {
   return (
-    <div className="footer text-light font-weight-light mt-4" id="footer">
+    <div className="container footer text-light font-weight-light mt-4" id="footer">
       <div className="row">
         <div className="aboutus col-md-4">
           <h5>About Us</h5>
@@ -15,7 +16,7 @@ function Footer() {
         </div>
         <div className="copyright col-md-4">
           <div className="logofab4">
-            <img src="/images/logo-fab4.png" alt="Fab4Coder Logo" />
+          <img className="logo" src={logo} alt="Logo" />
           </div>
           <div className="copyrightlogo">
             <p>&copy; 2023. The Fab 4 Dev. All Rights Reserved </p>

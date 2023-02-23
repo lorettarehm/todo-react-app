@@ -33,7 +33,7 @@
 }
 
 .button-jumbo:hover {
-  color: #0B0F10 !important;
+  color: #0b0f10 !important;
 }
 
 /* EXPLORE */
@@ -65,7 +65,6 @@
 
 .card-front {
   transform: rotateY(0deg);
-  
 }
 
 .card-front h3 {
@@ -131,11 +130,24 @@
 }
 
 .play-btn {
-  padding: .50rem 1.25rem !important;
+  padding: 0.5rem 1.25rem !important;
   font-size: 1rem !important;
-  background-color: #0B0F10 !important;
+  background-color: #0b0f10 !important;
 }
 
+.about-team {
+  color: white;
+  text-align: center;
+  margin: 5% 10% 5% 10%;
+}
+
+.about-team p {
+  padding-top: 2%;
+}
+
+.about-team h2 {
+  font-size: 3rem;
+}
 
 /* RESPONSIVE */
 
@@ -147,7 +159,7 @@
   .jumbotron p {
     font-size: 1rem;
   }
-  
+
   .jumbotron h1 {
     font-size: 3.5rem;
   }
@@ -157,53 +169,53 @@
   }
 }
 
-
 @media only screen and (max-width: 680px) {
   .card-padding {
-    padding-left: 10% !important;   
-  
+    padding-left: 10% !important;
   }
   .card-back p {
-
     font-size: 500px;
-    }
-    
-    .card-back h3 {
-    
-      font-size: 30px;
-      }
-    
-    .img-geo, .img-tall, .img-map {
-      width: 50%;
-    }
-} 
+  }
 
- @media only screen and (max-width: 900px) {
+  .card-back h3 {
+    font-size: 30px;
+  }
+
+  .img-geo,
+  .img-tall,
+  .img-map {
+    width: 50%;
+  }
+
+  .explore {
+    padding-top: 25%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
   .card-padding {
     padding-left: 10% !important;
-   
   }
-} 
+}
 
 /* TABLET */
 @media only screen and (max-width: 1180px) {
   .card-padding {
     min-height: 140px;
-  width: 100%;
-  padding-left: 0 !important;
+    width: 100%;
+    padding-left: 0 !important;
   }
-.card-back p {
-
-font-size: 11.5px;
-}
-
-.card-back h3 {
-
-  font-size: px;
+  .card-back p {
+    font-size: 11.5px;
   }
 
-.img-geo, .img-tall, .img-map {
-  width: 50%;
-}
-  
+  .card-back h3 {
+    font-size: px;
+  }
+
+  .img-geo,
+  .img-tall,
+  .img-map {
+    width: 50%;
+  }
 }
