@@ -167,7 +167,7 @@ function HeaderPart() {
 
           <div className="about-team">
             <h2 id="more-link">The Team</h2>
-            <p>
+            {/* <p>
               Explore Quizzes is a great way to test your knowledge of
               geography, maps, and the world's highest points. With these
               quizzes, you can challenge yourself to identify countries and
@@ -177,7 +177,7 @@ function HeaderPart() {
               quizzes are a fun and interactive way to explore the world and
               learn something new. So why not give them a try and see how much
               you really know about our amazing planet?
-            </p>
+            </p> */}
           </div>
         </div>
       )}
